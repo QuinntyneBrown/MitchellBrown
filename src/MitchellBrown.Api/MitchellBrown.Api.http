@@ -1,6 +1,0 @@
-@MitchellBrown.Api_HostAddress = http://localhost:5037
-
-GET {{MitchellBrown.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
