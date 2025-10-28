@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './components';
 import { Observable } from 'rxjs';
 import { RouterOutlet } from '@angular/router';
 
