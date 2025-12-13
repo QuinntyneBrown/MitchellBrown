@@ -2,13 +2,13 @@
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
 using Microsoft.EntityFrameworkCore;
-using MitchellBrown.Core.AggregateModels.InfoSessionRequest;
+using MitchellBrown.Core.AggregateModels.Inquiry;
 
 namespace MitchellBrown.Core.Services;
 
 public interface IMitchellBrownContext
 {
-    DbSet<InfoSessionRequestAggregateRoot> InfoSessionRequests { get; }
+    DbSet<InquiryAggregateRoot> Inquiries { get; }
 
 }
 

@@ -4,11 +4,11 @@ import { inject, Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class InfoSessionRequestService {
+export class InquiryService {
 
   private readonly _httpClient = inject(HttpClient);
 
-  public infoSessionRequestCreate(infoSessionRequest:any) {
-    return this._httpClient.post("api/infoSessionRequests", {infoSessionRequest});
+  public inquiryCreate(inquiry:any) {
+    return this._httpClient.post("api/inquiries", {inquiry});
   }
 }

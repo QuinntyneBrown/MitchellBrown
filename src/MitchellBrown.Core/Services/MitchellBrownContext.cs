@@ -3,7 +3,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using MitchellBrown.Core.AggregateModels.InfoSessionRequest;
+using MitchellBrown.Core.AggregateModels.Inquiry;
 
 namespace MitchellBrown.Core.Services;
 
@@ -22,7 +22,7 @@ public class MitchellBrownContext: IMitchellBrownContext
 
     }
 
-    public DbSet<InfoSessionRequestAggregateRoot> InfoSessionRequests { get; private set; }
+    public DbSet<InquiryAggregateRoot> Inquiries { get; private set; }
 
 }
 

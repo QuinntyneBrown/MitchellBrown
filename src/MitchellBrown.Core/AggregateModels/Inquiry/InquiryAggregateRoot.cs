@@ -1,14 +1,14 @@
 // Copyright (c) Quinntyne Brown. All Rights Reserved.
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
-using MitchellBrown.Core.AggregateModels.InfoSessionRequest.Models;
+using MitchellBrown.Core.AggregateModels.Inquiry.Models;
 
-namespace MitchellBrown.Core.AggregateModels.InfoSessionRequest;
+namespace MitchellBrown.Core.AggregateModels.Inquiry;
 
-public class InfoSessionRequestAggregateRoot
+public class InquiryAggregateRoot
 {
-    public InfoSessionRequestAggregateRoot(
-        InfoSessionRequestType type,
+    public InquiryAggregateRoot(
+        InquiryType type,
         string firstName,
         string lastName,
         string email,
@@ -21,9 +21,9 @@ public class InfoSessionRequestAggregateRoot
         PhoneNumber = phoneNumber;
     }
 
-    public Guid InfoSessionRequestId { get; set; }
+    public Guid InquiryId { get; set; }
     
-    public InfoSessionRequestType Type { get; set; }
+    public InquiryType Type { get; set; }
 
     public string FirstName { get; set; }
 
