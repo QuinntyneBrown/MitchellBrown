@@ -9,7 +9,6 @@ const config: Config = {
     'src/**/*.ts',
     '!src/**/*.spec.ts',
     '!src/main.ts',
-    '!src/polyfills.ts',
   ],
   moduleNameMapper: {
     '^src/(.*)$': '<rootDir>/src/$1',
