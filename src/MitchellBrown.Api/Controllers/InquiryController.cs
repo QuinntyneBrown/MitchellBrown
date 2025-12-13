@@ -1,13 +1,11 @@
 // Copyright (c) Quinntyne Brown. All Rights Reserved.
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
-using System;
+namespace MitchellBrown.Api.Controllers;
 
-namespace MitchellBrown.Core.AggregateModels.InfoSessionRequest.Models;
-
-public enum InfoSessionRequestType
-{
+[ApiController]
+public class InquiryController
+{ 
     
 
 }
-

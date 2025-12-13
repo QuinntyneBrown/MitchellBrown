@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 
-import { InfoSessionRequestService } from './info-session-request.service';
+import { InquiryService } from './inquiry.service';
 import { provideHttpClient } from '@angular/common/http';
 import { provideHttpClientTesting, HttpTestingController } from '@angular/common/http/testing';
 
-describe('InfoSessionRequestService', () => {
-  let service: InfoSessionRequestService;
+describe('InquiryService', () => {
+  let service: InquiryService;
   let httpTestingController: HttpTestingController;
 
   beforeEach(() => {
@@ -14,12 +14,12 @@ describe('InfoSessionRequestService', () => {
 
       ],
       providers: [
-        InfoSessionRequestService,
+        InquiryService,
         provideHttpClient(),
         provideHttpClientTesting()
       ]
     });
-    service = TestBed.inject(InfoSessionRequestService);
+    service = TestBed.inject(InquiryService);
     httpTestingController = TestBed.inject(HttpTestingController);
   });
 
@@ -31,15 +31,15 @@ describe('InfoSessionRequestService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should post infoSessionRequest', () => {
+  it('should post inquiry', () => {
 
     const mockResponse = {};
 
-    service.infoSessionRequestCreate({ name: "Foo" }).subscribe(response => {
+    service.inquiryCreate({ name: "Foo" }).subscribe(response => {
       expect(response).toEqual(mockResponse);
     });
 
-    const testRequest = httpTestingController.expectOne('api/infoSessionRequests');
+    const testRequest = httpTestingController.expectOne('api/inquiries');
 
     expect(testRequest.request.method).toEqual('POST');
 
