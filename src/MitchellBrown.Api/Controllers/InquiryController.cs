@@ -3,6 +3,7 @@
 
 namespace MitchellBrown.Api.Controllers;
 
+[Route("api/inquiries")]
 [ApiController]
 public class InquiryController
 { 
