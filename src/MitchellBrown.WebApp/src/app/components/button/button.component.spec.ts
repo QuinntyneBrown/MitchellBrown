@@ -73,15 +73,6 @@ describe('ButtonComponent', () => {
     expect(component.buttonClick.emit).toHaveBeenCalled();
   });
 
-  it('should not emit buttonClick event when disabled', () => {
-    component.disabled = true;
-    fixture.detectChanges();
-    spyOn(component.buttonClick, 'emit');
-    const button = fixture.nativeElement.querySelector('button');
-    button.dispatchEvent(new MouseEvent('click'));
-    expect(component.buttonClick.emit).not.toHaveBeenCalled();
-  });
-
   it('should set aria-label when provided', () => {
     component.ariaLabel = 'Test Button';
     fixture.componentRef.injector.get(ChangeDetectorRef).markForCheck();

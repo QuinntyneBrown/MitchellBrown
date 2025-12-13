@@ -63,6 +63,7 @@ export class TextareaComponent implements ControlValueAccessor {
 
   onTextareaChange(event: Event): void {
     const target = event.target as HTMLTextAreaElement;
+    if (!target) return;
     this.value = target.value;
     this.onChange(this.value);
   }

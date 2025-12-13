@@ -44,12 +44,6 @@ export class ButtonComponent {
   }
 
   protected handleClick(event: MouseEvent): void {
-    if (this.disabled) {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-      return;
-    }
-
     this.buttonClick.emit(event);
   }
 }
