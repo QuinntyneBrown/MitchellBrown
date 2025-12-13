@@ -1,0 +1,16 @@
+<div class="form__group">
+  <label *ngIf="label" [for]="id" class="form__label" [class.form__label--required]="required">
+    {{ label }}
+  </label>
+  <textarea
+    [id]="id"
+    [class]="textareaClasses"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    [required]="required"
+    [rows]="rows"
+    [value]="value"
+    (input)="onTextareaChange($event)"
+    (blur)="onBlur()"
+  ></textarea>
+</div>

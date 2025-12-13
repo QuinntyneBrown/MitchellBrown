@@ -1,0 +1,49 @@
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+
+export type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost' | 'success' | 'danger' | 'warning';
+export type ButtonSize = 'normal' | 'large' | 'small';
+export type ButtonType = 'button' | 'submit' | 'reset';
+
+@Component({
+  selector: 'app-button',
+  standalone: true,
+  templateUrl: './button.component.html',
+  styleUrl: './button.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class ButtonComponent {
+  @Input() variant: ButtonVariant = 'primary';
+  @Input() size: ButtonSize = 'normal';
+  @Input() block = false;
+  @Input() disabled = false;
+  @Input() type: ButtonType = 'button';
+  @Input() ariaLabel?: string;
+
+  @Output() buttonClick = new EventEmitter<MouseEvent>();
+
+  protected get classes(): string {
+    const classes = ['btn'];
+
+    classes.push(`btn--${this.variant}`);
+
+    if (this.size === 'large') {
+      classes.push('btn--large');
+    } else if (this.size === 'small') {
+      classes.push('btn--small');
+    }
+
+    if (this.block) {
+      classes.push('btn--block');
+    }
+
+    if (this.disabled) {
+      classes.push('btn--disabled');
+    }
+
+    return classes.join(' ');
+  }
+
+  protected handleClick(event: MouseEvent): void {
+    this.buttonClick.emit(event);
+  }
+}
