@@ -1,0 +1,7 @@
+<div [class]="posterClasses" [ngStyle]="backgroundStyle">
+  <div class="poster__content">
+    <h1 *ngIf="title" class="poster__title">{{ title }}</h1>
+    <p *ngIf="subtitle" class="poster__subtitle">{{ subtitle }}</p>
+    <ng-content></ng-content>
+  </div>
+</div>
