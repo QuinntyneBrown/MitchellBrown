@@ -2,6 +2,8 @@
   <!-- Mobile High-Fidelity Mockup for Homepage -->
   <defs>
     <style>
+      /* Note: Google Fonts import is for mockup visualization only. 
+         Production implementation should use locally hosted fonts or system fonts. */
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap');
       .inter { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
       .hero-main { font-size: 40px; font-weight: 700; line-height: 1.2; }
