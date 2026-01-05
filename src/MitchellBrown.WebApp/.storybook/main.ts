@@ -11,7 +11,9 @@ const config: StorybookConfig = {
     name: '@storybook/angular',
     options: {},
   },
-  docs: {},
+  docs: {
+    autodocs: true
+  },
 };
 
 export default config;

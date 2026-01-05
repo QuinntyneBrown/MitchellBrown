@@ -13,8 +13,8 @@
     "e2e": "playwright test",
     "e2e:ui": "playwright test --ui",
     "e2e:headed": "playwright test --headed",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook": "ng run mitchell-brown:storybook",
+    "build-storybook": "ng run mitchell-brown:build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -40,15 +40,15 @@
     "@angular/compiler-cli": "^21.0.6",
     "@playwright/test": "^1.49.0",
     "@storybook/addon-essentials": "^8.6.14",
-    "@storybook/angular": "^10.1.11",
+    "@storybook/angular": "^8.6.14",
     "@storybook/blocks": "^8.6.14",
     "@storybook/test": "^8.6.15",
-    "@vitest/ui": "^3.2.4",
+    "@vitest/ui": "^4.0.16",
     "jsdom": "^25.0.1",
     "ng-packagr": "^21.0.0",
-    "storybook": "^10.1.11",
+    "storybook": "^8.6.14",
     "ts-node": "^10.9.2",
     "typescript": "~5.9.3",
-    "vitest": "^3.2.4"
+    "vitest": "^4.0.16"
   }
 }

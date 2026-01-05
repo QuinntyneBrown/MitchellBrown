@@ -5,7 +5,12 @@
     "module": "ES2022",
     "moduleResolution": "bundler"
   },
+  "files": [
+    "./main.ts",
+    "./preview.ts"
+  ],
   "include": [
+    "./*.ts",
     "../projects/mitchell-brown-components/src/**/*.stories.ts",
     "../projects/mitchell-brown-components/src/**/*.ts"
   ],
