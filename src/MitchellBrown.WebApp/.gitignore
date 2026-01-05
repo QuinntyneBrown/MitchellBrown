@@ -11,6 +11,12 @@
 npm-debug.log
 yarn-error.log
 
+# Storybook build output / logs
+/storybook-static
+storybook.log
+doctor-storybook.log
+migration-storybook.log
+
 # IDEs and editors
 .idea/
 .project
