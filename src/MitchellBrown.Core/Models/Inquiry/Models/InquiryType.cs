@@ -3,7 +3,7 @@
 
 using System;
 
-namespace MitchellBrown.Core.AggregateModels.Inquiry.Models;
+namespace MitchellBrown.Core.Models.Inquiry.Models;
 
 public enum InquiryType
 {

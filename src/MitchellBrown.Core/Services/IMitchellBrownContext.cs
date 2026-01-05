@@ -2,7 +2,7 @@
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
 using Microsoft.EntityFrameworkCore;
-using MitchellBrown.Core.AggregateModels.Inquiry;
+using MitchellBrown.Core.Models.Inquiry;
 
 namespace MitchellBrown.Core.Services;
 

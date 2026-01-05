@@ -3,7 +3,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using MitchellBrown.Core.AggregateModels.Inquiry;
+using MitchellBrown.Core.Models.Inquiry;
 using MitchellBrown.Core.Services;
 
 namespace MitchellBrown.Infrastructure.Services;

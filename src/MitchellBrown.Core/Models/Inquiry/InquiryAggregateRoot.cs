@@ -1,9 +1,9 @@
 // Copyright (c) Quinntyne Brown. All Rights Reserved.
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
-using MitchellBrown.Core.AggregateModels.Inquiry.Models;
+using MitchellBrown.Core.Models.Inquiry.Models;
 
-namespace MitchellBrown.Core.AggregateModels.Inquiry;
+namespace MitchellBrown.Core.Models.Inquiry;
 
 public class InquiryAggregateRoot
 {

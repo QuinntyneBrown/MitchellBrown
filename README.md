@@ -68,7 +68,7 @@ MitchellBrown/
 ├── src/
 │   ├── MitchellBrown.Api/          # Web API controllers and endpoints
 │   ├── MitchellBrown.Core/         # Domain models and business logic
-│   │   ├── AggregateModels/        # DDD aggregate roots
+│   │   ├── Models/                # DDD aggregate roots
 │   │   │   └── Inquiry/           # Inquiry domain model
 │   │   └── Services/              # Core business services
 │   ├── MitchellBrown.Infrastructure/ # Data access and infrastructure
