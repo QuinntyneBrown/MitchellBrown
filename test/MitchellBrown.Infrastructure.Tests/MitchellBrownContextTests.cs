@@ -3,7 +3,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using MitchellBrown.Core.Models.Inquiry;
+using MitchellBrown.Core.Models.InquiryAggregate;
 using MitchellBrown.Infrastructure.Services;
 using Moq;
 
@@ -40,7 +40,7 @@ public class MitchellBrownContextTests
         // Act
         using (var context = new MitchellBrownContext(options, mockLogger.Object))
         {
-            var inquiry = new InquiryAggregateRoot(
+            var inquiry = new Inquiry(
                 type: default,
                 firstName: "John",
                 lastName: "Doe",

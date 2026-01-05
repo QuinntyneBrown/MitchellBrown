@@ -1,13 +1,13 @@
 // Copyright (c) Quinntyne Brown. All Rights Reserved.
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
-using MitchellBrown.Core.Models.Inquiry.Models;
+using MitchellBrown.Core.Models.InquiryAggregate.Enums;
 
-namespace MitchellBrown.Core.Models.Inquiry;
+namespace MitchellBrown.Core.Models.InquiryAggregate;
 
-public class InquiryAggregateRoot
+public class Inquiry
 {
-    public InquiryAggregateRoot(
+    public Inquiry(
         InquiryType type,
         string firstName,
         string lastName,

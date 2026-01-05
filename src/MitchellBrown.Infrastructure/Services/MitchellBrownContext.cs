@@ -3,7 +3,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using MitchellBrown.Core.Models.Inquiry;
+using MitchellBrown.Core.Models.InquiryAggregate;
 using MitchellBrown.Core.Services;
 
 namespace MitchellBrown.Infrastructure.Services;
@@ -27,13 +27,13 @@ public class MitchellBrownContext: DbContext, IMitchellBrownContext
         _logger = logger;
     }
 
-    public DbSet<InquiryAggregateRoot> Inquiries { get; set; }
+    public DbSet<Inquiry> Inquiries { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
-        modelBuilder.Entity<InquiryAggregateRoot>()
+        modelBuilder.Entity<Inquiry>()
             .HasKey(e => e.InquiryId);
     }
 }
