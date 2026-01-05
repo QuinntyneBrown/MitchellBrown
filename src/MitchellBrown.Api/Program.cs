@@ -10,8 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 var isTestMode = builder.Configuration.GetValue<bool>("SkipDbInitialization");
 if (!isTestMode)
 {
-    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") 
-        ?? "Server=(localdb)\\mssqllocaldb;Database=MitchellBrownDb;Trusted_Connection=True;MultipleActiveResultSets=true";
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    if (string.IsNullOrWhiteSpace(connectionString))
+    {
+        throw new InvalidOperationException(
+            "Missing connection string 'ConnectionStrings:DefaultConnection'. " +
+            "Set it in appsettings.json (e.g., SqlExpress) or provide it via environment-specific configuration.");
+    }
     
     builder.Services.AddInfrastructureServices(connectionString);
 }
@@ -20,8 +25,8 @@ builder.Services.AddApiServices();
 
 var app = builder.Build();
 
-// Initialize database with seed data (skip during testing)
-if (!isTestMode)
+// Initialize database with seed data (only in development, skip during testing)
+if (!isTestMode && app.Environment.IsDevelopment())
 {
     await DbInitializer.InitializeAsync(app.Services);
 }
