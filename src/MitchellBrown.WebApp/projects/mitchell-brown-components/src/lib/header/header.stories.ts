@@ -43,23 +43,23 @@ export const Default: Story = {
   args: {
     title: 'Mitchell Brown',
     navItems: [
-      { label: 'Home', href: '/', active: true },
-      { label: 'Services', href: '/services' },
-      { label: 'About', href: '/about' },
-      { label: 'Contact', href: '/contact' },
+      { label: 'Life Insurance', href: '/services/life-insurance' },
+      { label: 'Investments', href: '/services/investments' },
+      { label: 'Retirement Planning', href: '/services/retirement-planning', active: true },
+      { label: 'Estate Planning', href: '/services/estate-planning' },
     ],
   },
 };
 
 export const WithLogo: Story = {
   args: {
-    logoSrc: 'https://via.placeholder.com/150x40?text=Logo',
+    logoSrc: 'https://via.placeholder.com/150x40?text=Mitchell+Brown',
     logoAlt: 'Mitchell Brown Logo',
     navItems: [
-      { label: 'Home', href: '/', active: true },
-      { label: 'Services', href: '/services' },
-      { label: 'About', href: '/about' },
-      { label: 'Contact', href: '/contact' },
+      { label: 'Life Insurance', href: '/services/life-insurance' },
+      { label: 'Investments', href: '/services/investments' },
+      { label: 'Retirement Planning', href: '/services/retirement-planning' },
+      { label: 'Estate Planning', href: '/services/estate-planning', active: true },
     ],
   },
 };
@@ -68,8 +68,8 @@ export const MinimalNav: Story = {
   args: {
     title: 'Mitchell Brown',
     navItems: [
-      { label: 'Home', href: '/' },
-      { label: 'Contact', href: '/contact' },
+      { label: 'Life Insurance', href: '/services/life-insurance' },
+      { label: 'Retirement Planning', href: '/services/retirement-planning' },
     ],
   },
 };
@@ -85,10 +85,10 @@ export const MobileView: Story = {
   args: {
     title: 'Mitchell Brown',
     navItems: [
-      { label: 'Home', href: '/', active: true },
-      { label: 'Services', href: '/services' },
-      { label: 'About', href: '/about' },
-      { label: 'Contact', href: '/contact' },
+      { label: 'Life Insurance', href: '/services/life-insurance', active: true },
+      { label: 'Investments', href: '/services/investments' },
+      { label: 'Retirement Planning', href: '/services/retirement-planning' },
+      { label: 'Estate Planning', href: '/services/estate-planning' },
     ],
   },
   parameters: {
