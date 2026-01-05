@@ -55,9 +55,6 @@ namespace {AppName}.Core.Model.{Aggregate}Aggregate.Events;
 namespace {AppName}.Core;  // Does not match file location
 ```
 
-### 2.8 Frontend Theme and Colours
-**REQ-SYS-011**: The frontend SHALL use the default Angular Material colours and theme. No new colours are to be introduced.
-
 ### 2.2 Backend Project Structure
 **REQ-SYS-002**: The Backend SHALL consist of exactly three (3) projects:
 - MitchellBrown.Core
@@ -94,6 +91,9 @@ Id
 
 ### 2.7 Database Configuration
 **REQ-SYS-010**: The system SHALL use SQL Server Express as the default database.
+
+### 2.8 Frontend Theme and Colors
+**REQ-SYS-011**: The frontend SHALL use the default Angular Material colors and theme. No new colors are to be introduced.
 
 ### 2.9 Implementation Simplicity
 **REQ-SYS-012**: All implementations in the system SHALL be as simple as possible. Complex solutions SHALL be avoided in favor of straightforward, maintainable approaches that directly solve the problem at hand.
