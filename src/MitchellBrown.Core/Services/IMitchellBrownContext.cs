@@ -3,6 +3,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using MitchellBrown.Core.Models.InquiryAggregate;
+using MitchellBrown.Core.Models.ServiceAggregate;
 
 namespace MitchellBrown.Core.Services;
 
@@ -10,5 +11,8 @@ public interface IMitchellBrownContext
 {
     DbSet<Inquiry> Inquiries { get; }
 
+    DbSet<Service> Services { get; }
+
+    Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }
 

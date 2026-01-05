@@ -4,6 +4,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MitchellBrown.Core.Models.InquiryAggregate;
+using MitchellBrown.Core.Models.ServiceAggregate;
 using MitchellBrown.Core.Services;
 
 namespace MitchellBrown.Infrastructure.Services;
@@ -29,11 +30,16 @@ public class MitchellBrownContext: DbContext, IMitchellBrownContext
 
     public DbSet<Inquiry> Inquiries { get; set; }
 
+    public DbSet<Service> Services { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.Entity<Inquiry>()
             .HasKey(e => e.InquiryId);
+
+        modelBuilder.Entity<Service>()
+            .HasKey(e => e.ServiceId);
     }
 }
