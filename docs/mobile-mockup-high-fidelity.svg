@@ -1,0 +1,231 @@
+<svg width="375" height="2800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mobile High-Fidelity Mockup for Homepage -->
+  <defs>
+    <style>
+      /* Note: Google Fonts import is for mockup visualization only. 
+         Production implementation should use locally hosted fonts or system fonts. */
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap');
+      .inter { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
+      .hero-main { font-size: 40px; font-weight: 700; line-height: 1.2; }
+      .hero-emphasis { font-size: 40px; font-weight: 800; line-height: 1.2; }
+      .section-title { font-size: 32px; font-weight: 700; }
+      .card-title { font-size: 20px; font-weight: 600; }
+      .body-text { font-size: 14px; font-weight: 400; line-height: 1.6; }
+      .button-text { font-size: 16px; font-weight: 600; }
+      .nav-link { font-size: 16px; font-weight: 400; }
+    </style>
+    
+    <!-- Card Shadow Filter -->
+    <filter id="card-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.15"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="375" height="2800" fill="#ffffff"/>
+  
+  <!-- Header/Navigation -->
+  <g id="header">
+    <rect width="375" height="70" fill="#ffffff"/>
+    <line x1="0" y1="70" x2="375" y2="70" stroke="#e5e5e5" stroke-width="1"/>
+    
+    <!-- Logo/Brand -->
+    <text x="20" y="46" class="inter nav-link" font-weight="700" fill="#003D6B">Mitchell Brown</text>
+    
+    <!-- Hamburger Menu Icon -->
+    <g transform="translate(335, 25)">
+      <rect width="25" height="3" fill="#003D6B" rx="1.5"/>
+      <rect y="8" width="25" height="3" fill="#003D6B" rx="1.5"/>
+      <rect y="16" width="25" height="3" fill="#003D6B" rx="1.5"/>
+    </g>
+  </g>
+  
+  <!-- Hero Section -->
+  <g id="hero">
+    <rect y="70" width="375" height="450" fill="#F5A84A"/>
+    
+    <!-- Hero Text -->
+    <text x="187.5" y="200" class="inter hero-main" fill="#ffffff" text-anchor="middle">Let <tspan class="hero-emphasis" fill="#003D6B">your</tspan></text>
+    <text x="187.5" y="250" class="inter hero-main" fill="#ffffff" text-anchor="middle">finances</text>
+    <text x="187.5" y="300" class="inter hero-main" fill="#ffffff" text-anchor="middle">grow.</text>
+    
+    <!-- CTA Button -->
+    <g transform="translate(67.5, 340)">
+      <rect width="240" height="48" fill="transparent" stroke="#0B4F8A" stroke-width="2" rx="4"/>
+      <text x="120" y="31" class="inter button-text" fill="#0B4F8A" text-anchor="middle">Request a Free Info Session</text>
+    </g>
+  </g>
+  
+  <!-- What We Do Section -->
+  <g id="services-section">
+    <rect y="520" width="375" height="900" fill="#1B5A9E"/>
+    
+    <!-- Section Title -->
+    <text x="20" y="575" class="inter section-title" fill="#ffffff">What we do</text>
+    
+    <!-- Service Card 1: Financial Needs Analysis -->
+    <g filter="url(#card-shadow)">
+      <rect x="20" y="615" width="335" height="260" fill="#ffffff" rx="8"/>
+      
+      <!-- Image placeholder -->
+      <rect x="20" y="615" width="335" height="140" fill="#e8e8e8" rx="8"/>
+      <g transform="translate(157.5, 665)">
+        <circle r="25" fill="#d0d0d0"/>
+        <path d="M-10,-5 L-10,5 L0,0 L10,5 L10,-5 Z" fill="#b0b0b0"/>
+      </g>
+      
+      <!-- Card Content -->
+      <text x="30" y="780" class="inter card-title" fill="#003D6B">Financial Needs Analysis</text>
+      
+      <text x="30" y="805" class="inter body-text" fill="#555555">
+        <tspan x="30" dy="0">We can help you with meeting your</tspan>
+        <tspan x="30" dy="18">financial goals, manage risk and plan</tspan>
+        <tspan x="30" dy="18">for future needs such as life insurance</tspan>
+        <tspan x="30" dy="18">coverage, retirement, or debt repayment.</tspan>
+      </text>
+    </g>
+    
+    <!-- Service Card 2: Estate Planning -->
+    <g filter="url(#card-shadow)">
+      <rect x="20" y="895" width="335" height="260" fill="#ffffff" rx="8"/>
+      
+      <!-- Image placeholder -->
+      <rect x="20" y="895" width="335" height="140" fill="#e8e8e8" rx="8"/>
+      <g transform="translate(157.5, 945)">
+        <circle r="25" fill="#d0d0d0"/>
+        <rect x="-15" y="-10" width="30" height="20" fill="#b0b0b0" rx="2"/>
+      </g>
+      
+      <!-- Card Content -->
+      <text x="30" y="1060" class="inter card-title" fill="#003D6B">Estate Planning</text>
+      
+      <text x="30" y="1085" class="inter body-text" fill="#555555">
+        <tspan x="30" dy="0">We can help you understand</tspan>
+        <tspan x="30" dy="18">strategies to preserve wealth and</tspan>
+        <tspan x="30" dy="18">ensure financial security for</tspan>
+        <tspan x="30" dy="18">beneficiaries.</tspan>
+      </text>
+    </g>
+    
+    <!-- Service Card 3: Insurance Needs -->
+    <g filter="url(#card-shadow)">
+      <rect x="20" y="1175" width="335" height="260" fill="#ffffff" rx="8"/>
+      
+      <!-- Image placeholder -->
+      <rect x="20" y="1175" width="335" height="140" fill="#e8e8e8" rx="8"/>
+      <g transform="translate(157.5, 1225)">
+        <circle r="25" fill="#d0d0d0"/>
+        <path d="M-5,-15 L5,-15 L5,-5 L10,-5 L10,5 L5,5 L5,15 L-5,15 L-5,5 L-10,5 L-10,-5 L-5,-5 Z" fill="#b0b0b0"/>
+      </g>
+      
+      <!-- Card Content -->
+      <text x="30" y="1340" class="inter card-title" fill="#003D6B">Insurance Needs</text>
+      
+      <text x="30" y="1365" class="inter body-text" fill="#555555">
+        <tspan x="30" dy="0">Protecting your family in the event</tspan>
+        <tspan x="30" dy="18">finances will be needed most, and</tspan>
+        <tspan x="30" dy="18">building up wealth for future</tspan>
+        <tspan x="30" dy="18">generations.</tspan>
+      </text>
+    </g>
+  </g>
+  
+  <!-- Get in Touch Section -->
+  <g id="contact-section">
+    <rect y="1420" width="375" height="600" fill="#1B5A9E"/>
+    
+    <!-- Section Title -->
+    <text x="20" y="1475" class="inter section-title" fill="#ffffff">Get in touch</text>
+    
+    <!-- Main Office -->
+    <text x="20" y="1520" class="inter" font-size="18" font-weight="600" fill="#7BC8F6">Main Office</text>
+    <text x="20" y="1545" class="inter" font-size="16" fill="#ffffff">Mississauga, ON</text>
+    
+    <!-- Email Address -->
+    <text x="20" y="1590" class="inter" font-size="18" font-weight="600" fill="#7BC8F6">Email Address</text>
+    <text x="20" y="1615" class="inter" font-size="14" fill="#ffffff">mitchellbrownfinance@gmail.com</text>
+    
+    <!-- Quote -->
+    <text x="20" y="1670" class="inter" font-size="15" font-style="italic" fill="#F5A84A">
+      <tspan x="20" dy="0">"Your need of finance is much greater</tspan>
+      <tspan x="20" dy="20">than your need of protection"</tspan>
+    </text>
+    <text x="20" y="1720" class="inter" font-size="14" fill="#ffffff">R. Nelson Nash</text>
+    
+    <!-- Office Image -->
+    <g filter="url(#card-shadow)">
+      <rect x="20" y="1750" width="335" height="250" fill="#e8e8e8" rx="8"/>
+      <!-- Simplified building illustration -->
+      <rect x="100" y="1850" width="60" height="120" fill="#b0b0b0"/>
+      <rect x="180" y="1820" width="80" height="150" fill="#909090"/>
+      <rect x="110" y="1865" width="10" height="15" fill="#d0d0d0"/>
+      <rect x="130" y="1865" width="10" height="15" fill="#d0d0d0"/>
+      <rect x="110" y="1890" width="10" height="15" fill="#d0d0d0"/>
+      <rect x="130" y="1890" width="10" height="15" fill="#d0d0d0"/>
+      <rect x="110" y="1915" width="10" height="15" fill="#d0d0d0"/>
+      <rect x="130" y="1915" width="10" height="15" fill="#d0d0d0"/>
+      <rect x="190" y="1835" width="12" height="15" fill="#d0d0d0"/>
+      <rect x="210" y="1835" width="12" height="15" fill="#d0d0d0"/>
+      <rect x="230" y="1835" width="12" height="15" fill="#d0d0d0"/>
+      <rect x="190" y="1860" width="12" height="15" fill="#d0d0d0"/>
+      <rect x="210" y="1860" width="12" height="15" fill="#d0d0d0"/>
+      <rect x="230" y="1860" width="12" height="15" fill="#d0d0d0"/>
+      <!-- Sky -->
+      <rect x="20" y="1750" width="335" height="80" fill="#87CEEB" rx="8"/>
+    </g>
+  </g>
+  
+  <!-- Request Free Information Section -->
+  <g id="form-section">
+    <rect y="2020" width="375" height="780" fill="#1B5A9E"/>
+    
+    <!-- Section Title -->
+    <text x="187.5" y="2075" class="inter" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Request Free Information</text>
+    
+    <!-- Subheadline -->
+    <text x="187.5" y="2110" class="inter" font-size="16" fill="#ffffff" text-anchor="middle">Thank you for taking this first step</text>
+    <text x="187.5" y="2130" class="inter" font-size="16" fill="#ffffff" text-anchor="middle">to learn more!</text>
+    
+    <!-- Description -->
+    <text x="30" y="2165" class="inter body-text" fill="#ffffff" opacity="0.9">
+      <tspan x="30" dy="0">We would love the opportunity to show you</tspan>
+      <tspan x="30" dy="18">what we can offer and how that will benefit you</tspan>
+      <tspan x="30" dy="18">and your family. Looking forward to speaking</tspan>
+      <tspan x="30" dy="18">with you soon.</tspan>
+    </text>
+    
+    <!-- Form Fields -->
+    <!-- Name Field -->
+    <rect x="30" y="2240" width="315" height="48" fill="#ffffff" rx="4"/>
+    <text x="46" y="2269" class="inter" font-size="16" fill="#999999">Name</text>
+    
+    <!-- Email Field -->
+    <rect x="30" y="2305" width="315" height="48" fill="#ffffff" rx="4"/>
+    <text x="46" y="2334" class="inter" font-size="16" fill="#999999">Email</text>
+    
+    <!-- Subject Field -->
+    <rect x="30" y="2370" width="315" height="48" fill="#ffffff" rx="4"/>
+    <text x="46" y="2399" class="inter" font-size="16" fill="#999999">Subject</text>
+    
+    <!-- Message Field -->
+    <rect x="30" y="2435" width="315" height="150" fill="#ffffff" rx="4"/>
+    <text x="46" y="2464" class="inter" font-size="16" fill="#999999">Message</text>
+    
+    <!-- Submit Button -->
+    <rect x="245" y="2610" width="100" height="48" fill="#ffffff" rx="4"/>
+    <text x="295" y="2639" class="inter button-text" fill="#0B4F8A" text-anchor="middle">Submit</text>
+  </g>
+  
+  <!-- Footer -->
+  <g id="footer">
+    <rect y="2800" width="375" height="100" fill="#003D6B"/>
+  </g>
+</svg>
