@@ -9,20 +9,25 @@ MitchellBrown is a full-stack web application that serves two primary purposes:
 1. **Public-facing Marketing Site** - Showcases life insurance and financial planning services, allowing potential customers to learn about offerings and submit inquiries
 2. **Administrative Platform** - Enables the site owner to manage website content and respond to customer inquiries
 
-The system implements a clean, two-tier backend architecture following Domain-Driven Design (DDD) principles, paired with a modern Angular-based frontend.
+The system implements a clean, three-tier backend architecture following Domain-Driven Design (DDD) principles, paired with a modern Angular-based frontend.
 
 ## Architecture
 
 ### Backend (.NET 10.0)
 
-The backend is organized into two distinct projects:
+The backend is organized into three distinct projects:
 
-- **MitchellBrown.Core** - Contains domain models, business logic, and data access
+- **MitchellBrown.Core** - Contains domain models and business logic
   - Aggregate models organized by bounded context (e.g., Inquiry)
   - Core business services
-  - `IMitchellBrownContext` interface and implementation for data access
-  - Entity Framework Core DbContext
-  
+  - `IMitchellBrownContext` interface for data access abstraction
+
+- **MitchellBrown.Infrastructure** - Contains data access implementation and external service integrations
+  - `MitchellBrownContext` DbContext implementation
+  - Entity Framework Core configurations
+  - Database migrations and seeding
+  - Infrastructure services
+
 - **MitchellBrown.Api** - ASP.NET Core Web API exposing HTTP endpoints
   - RESTful API controllers
   - OpenAPI/Swagger documentation
@@ -66,6 +71,8 @@ MitchellBrown/
 │   │   ├── AggregateModels/        # DDD aggregate roots
 │   │   │   └── Inquiry/           # Inquiry domain model
 │   │   └── Services/              # Core business services
+│   ├── MitchellBrown.Infrastructure/ # Data access and infrastructure
+│   │   └── Services/              # DbContext implementation
 │   └── MitchellBrown.WebApp/       # Angular frontend application
 │       ├── src/
 │       │   ├── app/
@@ -76,6 +83,7 @@ MitchellBrown/
 │       └── e2e/                   # End-to-end tests
 ├── test/
 │   ├── MitcellBrown.Api.Tests/     # API unit tests (note: typo in project name)
+│   ├── MitchellBrown.Infrastructure.Tests/ # Infrastructure unit tests
 │   └── MitchellBrown.WebApp.Tests/ # Frontend tests
 ├── docs/
 │   └── specs/                      # Detailed requirements documentation
@@ -147,6 +155,7 @@ dotnet test
 
 # Run tests for a specific project
 dotnet test test/MitcellBrown.Api.Tests/  # Note: actual directory name has typo
+dotnet test test/MitchellBrown.Infrastructure.Tests/
 ```
 
 #### Frontend Tests
@@ -208,8 +217,8 @@ For detailed feature requirements, see the [documentation](./docs/specs/README.m
 The system follows these key architectural principles:
 
 - **No Repository Pattern** - Direct use of `IMitchellBrownContext` for data access
-- **Services in Core** - Business logic and data access reside in the Core project
-- **Simplified Architecture** - Two-tier backend (Core + Api) instead of traditional three-tier
+- **Clean Separation of Concerns** - Infrastructure layer separated from domain logic
+- **Simplified Architecture** - Three-tier backend (Core + Infrastructure + Api) following clean architecture
 - **Flattened Namespaces** - Namespaces match physical file locations
 - **One Type Per File** - Each class, enum, or record has its own file
 - **Simplicity First** - Prefer straightforward solutions over complex patterns
@@ -224,3 +233,4 @@ This is a private project for Mitchell Brown. For questions or issues, please co
 
 Copyright (c) Quinntyne Brown. All Rights Reserved.
 Licensed under the MIT License. See License.txt in the project root for license information.
+
