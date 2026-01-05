@@ -17,10 +17,9 @@ export class HeaderComponent {
 
   onNavItemClick(item: NavItem): void {
     // Navigation will be handled by the router in the future
-    console.log('Navigation clicked:', item);
   }
 
   onLogoClick(): void {
-    console.log('Logo clicked - navigate to home');
+    // Navigate to home will be handled by the router
   }
 }
