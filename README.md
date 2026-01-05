@@ -9,23 +9,19 @@ MitchellBrown is a full-stack web application that serves two primary purposes:
 1. **Public-facing Marketing Site** - Showcases life insurance and financial planning services, allowing potential customers to learn about offerings and submit inquiries
 2. **Administrative Platform** - Enables the site owner to manage website content and respond to customer inquiries
 
-The system implements a clean, three-tier backend architecture following Domain-Driven Design (DDD) principles, paired with a modern Angular-based frontend.
+The system implements a clean, two-tier backend architecture following Domain-Driven Design (DDD) principles, paired with a modern Angular-based frontend.
 
 ## Architecture
 
 ### Backend (.NET 10.0)
 
-The backend is organized into three distinct projects:
+The backend is organized into two distinct projects:
 
-- **MitchellBrown.Core** - Contains domain models, business logic, and service interfaces
+- **MitchellBrown.Core** - Contains domain models, business logic, and data access
   - Aggregate models organized by bounded context (e.g., Inquiry)
   - Core business services
-  - `IMitchellBrownContext` interface for data access
-  
-- **MitchellBrown.Infrastructure** - Handles data persistence and infrastructure concerns
-  - Entity Framework Core implementations
-  - Database context (`MitchellBrownContext`)
-  - Entity configurations and migrations
+  - `IMitchellBrownContext` interface and implementation for data access
+  - Entity Framework Core DbContext
   
 - **MitchellBrown.Api** - ASP.NET Core Web API exposing HTTP endpoints
   - RESTful API controllers
@@ -212,7 +208,8 @@ For detailed feature requirements, see the [documentation](./docs/specs/README.m
 The system follows these key architectural principles:
 
 - **No Repository Pattern** - Direct use of `IMitchellBrownContext` for data access
-- **Services in Core** - Business logic resides in the Core project when possible
+- **Services in Core** - Business logic and data access reside in the Core project
+- **Simplified Architecture** - Two-tier backend (Core + Api) instead of traditional three-tier
 - **Flattened Namespaces** - Namespaces match physical file locations
 - **One Type Per File** - Each class, enum, or record has its own file
 - **Simplicity First** - Prefer straightforward solutions over complex patterns
