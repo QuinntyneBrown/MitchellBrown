@@ -1,32 +1,26 @@
-// Design tokens
-$header-height-mobile: 3.5rem;
-$header-height-desktop: 4rem;
-$header-padding: 1rem;
-$header-bg-color: var(--mat-sys-surface, #ffffff);
-$header-text-color: var(--mat-sys-on-surface, #1c1b1f);
-$header-link-hover-color: var(--mat-sys-primary, #6750a4);
-$header-border-color: var(--mat-sys-outline-variant, #cac4d0);
-$transition-duration: 0.3s;
-$breakpoint-tablet: 768px;
+// Import design tokens
+@use '../tokens' as *;
 
 .header {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: $z-index-header;
   background-color: $header-bg-color;
   border-bottom: 1px solid $header-border-color;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: $container-max-width;
     height: $header-height-mobile;
     margin: 0 auto;
-    padding: 0 $header-padding;
+    padding: 0 $container-padding-mobile;
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: $breakpoint-mobile) {
       height: $header-height-desktop;
+      padding: 0 $container-padding-desktop;
     }
   }
 
@@ -39,6 +33,7 @@ $breakpoint-tablet: 768px;
     align-items: center;
     text-decoration: none;
     color: $header-text-color;
+    transition: color $transition-normal;
 
     &:hover,
     &:focus {
@@ -48,24 +43,26 @@ $breakpoint-tablet: 768px;
     &:focus {
       outline: 2px solid $header-link-hover-color;
       outline-offset: 2px;
+      border-radius: $border-radius-sm;
     }
   }
 
   &__logo {
-    height: 2rem;
+    height: 32px;
     width: auto;
 
-    @media (min-width: $breakpoint-tablet) {
-      height: 2.5rem;
+    @media (min-width: $breakpoint-mobile) {
+      height: 40px;
     }
   }
 
   &__title {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    font-family: $font-family-primary;
 
-    @media (min-width: $breakpoint-tablet) {
-      font-size: 1.5rem;
+    @media (min-width: $breakpoint-mobile) {
+      font-size: 24px;
     }
   }
 
@@ -73,20 +70,27 @@ $breakpoint-tablet: 768px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 44px;
+    height: 44px;
     padding: 0;
     background: transparent;
     border: none;
     cursor: pointer;
+    transition: background-color $transition-normal;
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: $breakpoint-mobile) {
       display: none;
+    }
+
+    &:hover {
+      background-color: rgba($color-primary-blue, 0.08);
+      border-radius: $border-radius-sm;
     }
 
     &:focus {
       outline: 2px solid $header-link-hover-color;
       outline-offset: 2px;
+      border-radius: $border-radius-sm;
     }
   }
 
@@ -94,8 +98,8 @@ $breakpoint-tablet: 768px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 1.5rem;
-    height: 1rem;
+    width: 24px;
+    height: 16px;
   }
 
   &__menu-bar {
@@ -104,7 +108,7 @@ $breakpoint-tablet: 768px;
     height: 2px;
     background-color: $header-text-color;
     border-radius: 1px;
-    transition: transform $transition-duration, opacity $transition-duration;
+    transition: transform $transition-normal, opacity $transition-normal;
   }
 
   &__menu-icon--open {
@@ -123,6 +127,24 @@ $breakpoint-tablet: 768px;
     }
   }
 
+  &__backdrop {
+    position: fixed;
+    top: $header-height-mobile;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $transition-normal;
+    z-index: $z-index-overlay;
+
+    &--visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
   &__nav {
     position: fixed;
     top: $header-height-mobile;
@@ -133,14 +155,16 @@ $breakpoint-tablet: 768px;
     flex-direction: column;
     background-color: $header-bg-color;
     transform: translateX(-100%);
-    transition: transform $transition-duration ease-in-out;
+    transition: transform $transition-normal ease-in-out;
     overflow-y: auto;
+    z-index: $z-index-header + 1;
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: $breakpoint-mobile) {
       position: static;
       transform: none;
       flex-direction: row;
       overflow: visible;
+      z-index: auto;
     }
 
     &--open {
@@ -152,41 +176,44 @@ $breakpoint-tablet: 768px;
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 1rem 0;
+    padding: $spacing-sm 0;
     list-style: none;
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: $breakpoint-mobile) {
       flex-direction: row;
       align-items: center;
-      gap: 0.5rem;
+      gap: $spacing-xs;
       padding: 0;
     }
   }
 
   &__nav-item {
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: $breakpoint-mobile) {
       display: flex;
     }
   }
 
   &__nav-link {
     display: block;
-    padding: 0.75rem $header-padding;
-    font-size: 1rem;
-    font-weight: 500;
+    padding: 12px $container-padding-mobile;
+    font-size: $font-size-body;
+    font-weight: $font-weight-regular;
+    font-family: $font-family-primary;
     text-decoration: none;
-    color: $header-text-color;
-    transition: color $transition-duration, background-color $transition-duration;
+    color: $header-link-color;
+    transition: color $transition-normal, background-color $transition-normal, font-weight $transition-fast;
 
-    @media (min-width: $breakpoint-tablet) {
-      padding: 0.5rem 1rem;
-      border-radius: 0.25rem;
+    @media (min-width: $breakpoint-mobile) {
+      padding: 8px $spacing-sm;
+      border-radius: $border-radius-sm;
     }
 
     &:hover,
     &:focus {
       color: $header-link-hover-color;
-      background-color: rgba(103, 80, 164, 0.08);
+      background-color: rgba($color-primary-orange, 0.08);
+      font-weight: $font-weight-semibold;
+      text-decoration: underline;
     }
 
     &:focus {
@@ -195,8 +222,8 @@ $breakpoint-tablet: 768px;
     }
 
     &--active {
-      color: $header-link-hover-color;
-      font-weight: 600;
+      color: $header-link-active-color;
+      font-weight: $font-weight-bold;
     }
   }
 }
