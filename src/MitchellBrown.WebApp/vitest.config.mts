@@ -1,15 +1,20 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import angular from '@analogjs/vite-plugin-angular';
+import { resolve } from 'path';
 
 export default defineConfig({
-  plugins: [angular()],
+  plugins: [
+    angular({
+      tsconfig: resolve(__dirname, 'tsconfig.spec.json'),
+    }),
+  ],
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: ['@analogjs/vitest-angular/setup-zone', './src/test-setup.ts'],
-    include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-    exclude: ['node_modules', 'dist', 'e2e'],
+    setupFiles: ['./projects/mitchell-brown/src/test-setup.ts'],
+    include: ['projects/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    exclude: ['node_modules', 'dist', '**/e2e/**'],
     pool: 'forks',
     poolOptions: {
       forks: {
@@ -26,9 +31,9 @@ export default defineConfig({
       reporter: ['text', 'json', 'html'],
       exclude: [
         'node_modules/',
-        'src/test-setup.ts',
+        '**/test-setup.ts',
         '**/*.spec.ts',
-        'src/main.ts',
+        '**/main.ts',
       ],
     },
   },

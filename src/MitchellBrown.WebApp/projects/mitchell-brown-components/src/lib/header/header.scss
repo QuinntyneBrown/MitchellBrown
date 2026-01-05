@@ -1,0 +1,202 @@
+// Design tokens
+$header-height-mobile: 3.5rem;
+$header-height-desktop: 4rem;
+$header-padding: 1rem;
+$header-bg-color: var(--mat-sys-surface, #ffffff);
+$header-text-color: var(--mat-sys-on-surface, #1c1b1f);
+$header-link-hover-color: var(--mat-sys-primary, #6750a4);
+$header-border-color: var(--mat-sys-outline-variant, #cac4d0);
+$transition-duration: 0.3s;
+$breakpoint-tablet: 768px;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: $header-bg-color;
+  border-bottom: 1px solid $header-border-color;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: $header-height-mobile;
+    margin: 0 auto;
+    padding: 0 $header-padding;
+
+    @media (min-width: $breakpoint-tablet) {
+      height: $header-height-desktop;
+    }
+  }
+
+  &__brand {
+    flex-shrink: 0;
+  }
+
+  &__logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $header-text-color;
+
+    &:hover,
+    &:focus {
+      color: $header-link-hover-color;
+    }
+
+    &:focus {
+      outline: 2px solid $header-link-hover-color;
+      outline-offset: 2px;
+    }
+  }
+
+  &__logo {
+    height: 2rem;
+    width: auto;
+
+    @media (min-width: $breakpoint-tablet) {
+      height: 2.5rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
+
+    &:focus {
+      outline: 2px solid $header-link-hover-color;
+      outline-offset: 2px;
+    }
+  }
+
+  &__menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.5rem;
+    height: 1rem;
+  }
+
+  &__menu-bar {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $header-text-color;
+    border-radius: 1px;
+    transition: transform $transition-duration, opacity $transition-duration;
+  }
+
+  &__menu-icon--open {
+    .header__menu-bar {
+      &:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+    }
+  }
+
+  &__nav {
+    position: fixed;
+    top: $header-height-mobile;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: $header-bg-color;
+    transform: translateX(-100%);
+    transition: transform $transition-duration ease-in-out;
+    overflow-y: auto;
+
+    @media (min-width: $breakpoint-tablet) {
+      position: static;
+      transform: none;
+      flex-direction: row;
+      overflow: visible;
+    }
+
+    &--open {
+      transform: translateX(0);
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 1rem 0;
+    list-style: none;
+
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0;
+    }
+  }
+
+  &__nav-item {
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+    }
+  }
+
+  &__nav-link {
+    display: block;
+    padding: 0.75rem $header-padding;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: $header-text-color;
+    transition: color $transition-duration, background-color $transition-duration;
+
+    @media (min-width: $breakpoint-tablet) {
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+    }
+
+    &:hover,
+    &:focus {
+      color: $header-link-hover-color;
+      background-color: rgba(103, 80, 164, 0.08);
+    }
+
+    &:focus {
+      outline: 2px solid $header-link-hover-color;
+      outline-offset: -2px;
+    }
+
+    &--active {
+      color: $header-link-hover-color;
+      font-weight: 600;
+    }
+  }
+}

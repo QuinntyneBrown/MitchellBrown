@@ -3,15 +3,18 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host=127.0.0.1",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "start": "ng serve mitchell-brown --host=127.0.0.1",
+    "build": "ng build mitchell-brown",
+    "build:lib": "ng build mitchell-brown-components",
+    "watch": "ng build mitchell-brown --watch --configuration development",
     "test": "vitest",
     "test:watch": "vitest --watch",
     "test:coverage": "vitest --coverage",
     "e2e": "playwright test",
     "e2e:ui": "playwright test --ui",
-    "e2e:headed": "playwright test --headed"
+    "e2e:headed": "playwright test --headed",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "private": true,
   "dependencies": {
@@ -29,16 +32,23 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@analogjs/vite-plugin-angular": "^2.2.1",
     "@analogjs/vitest-angular": "^2.2.0",
     "@angular-devkit/build-angular": "^21.0.4",
     "@angular/build": "^21.0.4",
     "@angular/cli": "^21.0.4",
     "@angular/compiler-cli": "^21.0.6",
     "@playwright/test": "^1.49.0",
-    "@vitest/ui": "^4.0.16",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/angular": "^10.1.11",
+    "@storybook/blocks": "^8.6.14",
+    "@storybook/test": "^8.6.15",
+    "@vitest/ui": "^3.2.4",
     "jsdom": "^25.0.1",
+    "ng-packagr": "^21.0.0",
+    "storybook": "^10.1.11",
     "ts-node": "^10.9.2",
     "typescript": "~5.9.3",
-    "vitest": "^4.0.16"
+    "vitest": "^3.2.4"
   }
 }

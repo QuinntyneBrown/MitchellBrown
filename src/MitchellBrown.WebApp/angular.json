@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MitchellBrown.WebApp": {
+    "mitchell-brown": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,29 +17,29 @@
           "standalone": true
         }
       },
-      "root": "",
-      "sourceRoot": "src",
+      "root": "projects/mitchell-brown",
+      "sourceRoot": "projects/mitchell-brown/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/mitchell-brown.web-app",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
+            "outputPath": "dist/mitchell-brown",
+            "index": "projects/mitchell-brown/src/index.html",
+            "browser": "projects/mitchell-brown/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "projects/mitchell-brown/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "projects/mitchell-brown/public"
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "projects/mitchell-brown/src/styles.scss"
             ],
             "scripts": []
           },
@@ -79,10 +79,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MitchellBrown.WebApp:build:production"
+              "buildTarget": "mitchell-brown:build:production"
             },
             "development": {
-              "buildTarget": "MitchellBrown.WebApp:build:development"
+              "buildTarget": "mitchell-brown:build:development"
             }
           },
           "defaultConfiguration": "development",
@@ -95,6 +95,32 @@
         },
         "test": {
           "builder": "@analogjs/vitest-angular:test"
+        }
+      }
+    },
+    "mitchell-brown-components": {
+      "projectType": "library",
+      "root": "projects/mitchell-brown-components",
+      "sourceRoot": "projects/mitchell-brown-components/src",
+      "prefix": "mb",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mitchell-brown-components/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/mitchell-brown-components/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/mitchell-brown-components/tsconfig.spec.json"
+          }
         }
       }
     }

@@ -7,6 +7,11 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+    "paths": {
+      "mitchell-brown-components": [
+        "./dist/mitchell-brown-components"
+      ]
+    },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
@@ -23,5 +28,13 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "references": [
+    {
+      "path": "./projects/mitchell-brown-components/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/mitchell-brown-components/tsconfig.spec.json"
+    }
+  ]
 }
