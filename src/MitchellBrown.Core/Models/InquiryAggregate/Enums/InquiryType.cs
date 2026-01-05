@@ -7,7 +7,7 @@ namespace MitchellBrown.Core.Models.InquiryAggregate.Enums;
 
 public enum InquiryType
 {
-    
-
+    General,
+    ServiceInquiry
 }
 

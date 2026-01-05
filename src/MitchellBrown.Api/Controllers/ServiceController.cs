@@ -3,26 +3,25 @@
 
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using MitchellBrown.Api.Features.Inquiries;
+using MitchellBrown.Api.Features.Services;
 
 namespace MitchellBrown.Api.Controllers;
 
-[Route("api/inquiries")]
+[Route("api/services")]
 [ApiController]
-public class InquiryController : ControllerBase
+public class ServiceController : ControllerBase
 {
     private readonly IMediator _mediator;
 
-    public InquiryController(IMediator mediator)
+    public ServiceController(IMediator mediator)
     {
         _mediator = mediator;
     }
 
-    [HttpPost]
-    public async Task<ActionResult<CreateInquiryCommandResponse>> CreateInquiry([FromBody] CreateInquiryCommand command)
+    [HttpGet]
+    public async Task<ActionResult<GetServicesQueryResponse>> GetServices()
     {
-        var response = await _mediator.Send(command);
+        var response = await _mediator.Send(new GetServicesQuery());
         return Ok(response);
     }
 }
-
