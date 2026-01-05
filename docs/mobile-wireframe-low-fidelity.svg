@@ -1,0 +1,116 @@
+<svg width="375" height="2400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mobile Low-Fidelity Wireframe for Homepage -->
+  
+  <!-- Background -->
+  <rect width="375" height="2400" fill="#f5f5f5"/>
+  
+  <!-- Header -->
+  <g id="header">
+    <rect width="375" height="70" fill="#ffffff"/>
+    <rect x="20" y="25" width="120" height="20" fill="#cccccc" rx="2"/>
+    <text x="20" y="42" font-family="Arial, sans-serif" font-size="12" fill="#666">Logo</text>
+    
+    <!-- Hamburger Menu -->
+    <rect x="335" y="25" width="25" height="3" fill="#333333"/>
+    <rect x="335" y="33" width="25" height="3" fill="#333333"/>
+    <rect x="335" y="41" width="25" height="3" fill="#333333"/>
+  </g>
+  
+  <!-- Hero Section -->
+  <g id="hero">
+    <rect y="70" width="375" height="450" fill="#F5A84A"/>
+    
+    <!-- Hero Text Boxes -->
+    <rect x="40" y="150" width="295" height="120" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="187.5" y="215" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Hero Headline</text>
+    <text x="187.5" y="235" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">"Let your finances grow."</text>
+    
+    <!-- CTA Button -->
+    <rect x="67.5" y="310" width="240" height="50" fill="none" stroke="#0B4F8A" stroke-width="2" rx="4"/>
+    <text x="187.5" y="342" font-family="Arial, sans-serif" font-size="14" fill="#0B4F8A" text-anchor="middle">Request a Free Info Session</text>
+  </g>
+  
+  <!-- What We Do Section -->
+  <g id="services-section">
+    <rect y="520" width="375" height="680" fill="#1B5A9E"/>
+    
+    <!-- Section Title -->
+    <text x="20" y="565" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">What we do</text>
+    
+    <!-- Service Card 1 -->
+    <rect x="20" y="595" width="335" height="200" fill="#ffffff" rx="8"/>
+    <rect x="20" y="595" width="335" height="100" fill="#e0e0e0" rx="8"/>
+    <text x="30" y="715" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Financial Needs Analysis</text>
+    <rect x="30" y="725" width="315" height="50" fill="none" stroke="#cccccc" stroke-width="1"/>
+    <text x="30" y="745" font-family="Arial, sans-serif" font-size="10" fill="#666">Description text...</text>
+    
+    <!-- Service Card 2 -->
+    <rect x="20" y="815" width="335" height="200" fill="#ffffff" rx="8"/>
+    <rect x="20" y="815" width="335" height="100" fill="#e0e0e0" rx="8"/>
+    <text x="30" y="935" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Estate Planning</text>
+    <rect x="30" y="945" width="315" height="50" fill="none" stroke="#cccccc" stroke-width="1"/>
+    <text x="30" y="965" font-family="Arial, sans-serif" font-size="10" fill="#666">Description text...</text>
+    
+    <!-- Service Card 3 -->
+    <rect x="20" y="1035" width="335" height="200" fill="#ffffff" rx="8"/>
+    <rect x="20" y="1035" width="335" height="100" fill="#e0e0e0" rx="8"/>
+    <text x="30" y="1155" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Insurance Needs</text>
+    <rect x="30" y="1165" width="315" height="50" fill="none" stroke="#cccccc" stroke-width="1"/>
+    <text x="30" y="1185" font-family="Arial, sans-serif" font-size="10" fill="#666">Description text...</text>
+  </g>
+  
+  <!-- Get in Touch Section -->
+  <g id="contact-section">
+    <rect y="1200" width="375" height="500" fill="#1B5A9E"/>
+    
+    <!-- Section Title -->
+    <text x="20" y="1245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">Get in touch</text>
+    
+    <!-- Contact Info Box -->
+    <rect x="20" y="1270" width="335" height="150" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,5"/>
+    <text x="30" y="1295" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#7BC8F6">Main Office</text>
+    <text x="30" y="1315" font-family="Arial, sans-serif" font-size="11" fill="#ffffff">Mississauga, ON</text>
+    
+    <text x="30" y="1345" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#7BC8F6">Email Address</text>
+    <text x="30" y="1365" font-family="Arial, sans-serif" font-size="11" fill="#ffffff">mitchellbrownfinance@gmail.com</text>
+    
+    <text x="30" y="1400" font-family="Arial, sans-serif" font-size="10" font-style="italic" fill="#F5A84A">Quote text...</text>
+    
+    <!-- Image Placeholder -->
+    <rect x="20" y="1440" width="335" height="230" fill="#e0e0e0" rx="8"/>
+    <text x="187.5" y="1560" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">Office Image</text>
+  </g>
+  
+  <!-- Request Free Information Section -->
+  <g id="form-section">
+    <rect y="1700" width="375" height="700" fill="#1B5A9E"/>
+    
+    <!-- Section Title -->
+    <text x="187.5" y="1745" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Request Free Information</text>
+    
+    <!-- Subtext Box -->
+    <rect x="30" y="1760" width="315" height="70" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,5"/>
+    <text x="187.5" y="1795" font-family="Arial, sans-serif" font-size="10" fill="#ffffff" text-anchor="middle">Thank you message and description...</text>
+    
+    <!-- Form Fields -->
+    <rect x="30" y="1850" width="315" height="45" fill="#ffffff" rx="4"/>
+    <text x="40" y="1878" font-family="Arial, sans-serif" font-size="12" fill="#999">Name</text>
+    
+    <rect x="30" y="1910" width="315" height="45" fill="#ffffff" rx="4"/>
+    <text x="40" y="1938" font-family="Arial, sans-serif" font-size="12" fill="#999">Email</text>
+    
+    <rect x="30" y="1970" width="315" height="45" fill="#ffffff" rx="4"/>
+    <text x="40" y="1998" font-family="Arial, sans-serif" font-size="12" fill="#999">Subject</text>
+    
+    <rect x="30" y="2030" width="315" height="120" fill="#ffffff" rx="4"/>
+    <text x="40" y="2058" font-family="Arial, sans-serif" font-size="12" fill="#999">Message</text>
+    
+    <!-- Submit Button -->
+    <rect x="230" y="2170" width="115" height="45" fill="#ffffff" rx="4"/>
+    <text x="287.5" y="2198" font-family="Arial, sans-serif" font-size="12" fill="#0B4F8A" text-anchor="middle">Submit</text>
+  </g>
+  
+  <!-- Labels -->
+  <text x="187.5" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333" text-anchor="middle">Mitchell Brown Financial - Mobile Wireframe</text>
+  <text x="187.5" y="35" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">Low-Fidelity (375px width)</text>
+</svg>
