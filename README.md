@@ -79,7 +79,7 @@ MitchellBrown/
 │       │   └── index.html
 │       └── e2e/                   # End-to-end tests
 ├── test/
-│   ├── MitcellBrown.Api.Tests/    # API unit tests
+│   ├── MitcellBrown.Api.Tests/     # API unit tests (note: typo in project name)
 │   └── MitchellBrown.WebApp.Tests/ # Frontend tests
 ├── docs/
 │   └── specs/                      # Detailed requirements documentation
@@ -150,7 +150,7 @@ MitchellBrown/
 dotnet test
 
 # Run tests for a specific project
-dotnet test test/MitcellBrown.Api.Tests/
+dotnet test test/MitcellBrown.Api.Tests/  # Note: actual directory name has typo
 ```
 
 #### Frontend Tests
