@@ -20,18 +20,15 @@
     @media (min-width: $breakpoint-mobile) {
       height: $header-height-desktop;
       padding: 0 $container-padding-desktop;
-      justify-content: flex-end;
-      gap: $spacing-md;
     }
   }
 
   &__brand {
     flex-shrink: 0;
-    order: 2;
+    order: 1;
 
     @media (min-width: $breakpoint-mobile) {
-      order: 3;
-      margin-left: auto;
+      order: 1;
     }
   }
 
@@ -84,7 +81,7 @@
     border: none;
     cursor: pointer;
     transition: background-color $transition-normal;
-    order: 1;
+    order: 3;
 
     @media (min-width: $breakpoint-mobile) {
       display: none;
@@ -166,7 +163,7 @@
     transition: transform $transition-normal ease-in-out;
     overflow-y: auto;
     z-index: $z-index-header + 1;
-    order: 3;
+    order: 2;
 
     @media (min-width: $breakpoint-mobile) {
       position: static;
@@ -176,6 +173,7 @@
       z-index: auto;
       order: 2;
       flex: 1;
+      margin-left: auto;
     }
 
     &--open {
