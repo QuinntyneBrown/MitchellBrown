@@ -1,0 +1,382 @@
+@import '../../../_tokens.scss';
+
+// Hero Section
+.hero {
+  background-color: $color-primary-orange;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-2xl $container-padding-mobile;
+  text-align: center;
+
+  &__container {
+    max-width: $container-max-width;
+    width: 100%;
+  }
+
+  &__headline {
+    font-size: $font-size-hero-mobile;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-tight;
+    color: $color-white;
+    margin: 0 0 $spacing-xl 0;
+
+    &--emphasis {
+      color: $color-dark-blue;
+      font-weight: $font-weight-extrabold;
+    }
+  }
+
+  &__cta {
+    ::ng-deep .btn {
+      color: $color-primary-blue;
+      border-color: $color-primary-blue;
+      background-color: transparent;
+      padding: $spacing-sm $spacing-lg;
+      font-weight: $font-weight-semibold;
+      min-width: 280px;
+
+      &:hover {
+        background-color: $color-primary-blue;
+        color: $color-white;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    min-height: 500px;
+    padding: $spacing-3xl $container-padding-tablet;
+
+    &__headline {
+      font-size: 54px;
+    }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: $spacing-4xl $container-padding-desktop;
+
+    &__headline {
+      font-size: $font-size-hero-desktop;
+    }
+  }
+}
+
+// Services Section
+.services {
+  background-color: $color-light-blue;
+  padding: $spacing-3xl $container-padding-mobile;
+
+  &__container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: $font-size-h2-mobile;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-tight;
+    color: $color-white;
+    text-align: center;
+    margin: 0 0 $spacing-2xl 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+  }
+
+  &__card {
+    ::ng-deep .card {
+      border-radius: $border-radius-md;
+      overflow: hidden;
+      box-shadow: $shadow-md;
+      height: 100%;
+    }
+  }
+
+  @media (min-width: $breakpoint-mobile) {
+    padding: $spacing-3xl $container-padding-tablet;
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: $spacing-lg;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: $spacing-4xl $container-padding-desktop;
+
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: $spacing-xl;
+    }
+
+    &__title {
+      font-size: $font-size-h2-desktop;
+      margin-bottom: $spacing-3xl;
+    }
+  }
+}
+
+// Contact Section
+.contact {
+  background-color: $color-light-blue;
+  padding: $spacing-3xl $container-padding-mobile;
+
+  &__container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-xl;
+  }
+
+  &__content {
+    color: $color-white;
+  }
+
+  &__title {
+    font-size: $font-size-h2-mobile;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-tight;
+    margin: 0 0 $spacing-lg 0;
+  }
+
+  &__info {
+    margin-bottom: $spacing-xl;
+  }
+
+  &__info-item {
+    margin-bottom: $spacing-lg;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__info-label {
+    font-size: $font-size-body;
+    font-weight: $font-weight-semibold;
+    color: $color-light-blue-accent;
+    margin: 0 0 $spacing-xs 0;
+  }
+
+  &__info-text {
+    font-size: $font-size-body;
+    line-height: $line-height-normal;
+    margin: 0;
+  }
+
+  &__link {
+    color: $color-white;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__quote {
+    margin: $spacing-xl 0 0 0;
+    padding: $spacing-md 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  &__quote-text {
+    font-size: $font-size-body;
+    font-style: italic;
+    line-height: $line-height-relaxed;
+    margin: 0 0 $spacing-sm 0;
+    color: $color-light-blue-accent;
+  }
+
+  &__quote-author {
+    display: block;
+    font-size: $font-size-small;
+    font-style: normal;
+    font-weight: $font-weight-medium;
+    color: $color-white;
+  }
+
+  &__image-wrapper {
+    border-radius: $border-radius-md;
+    overflow: hidden;
+    box-shadow: $shadow-lg;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (min-width: $breakpoint-mobile) {
+    padding: $spacing-3xl $container-padding-tablet;
+
+    &__title {
+      font-size: 32px;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: $spacing-4xl $container-padding-desktop;
+
+    &__container {
+      grid-template-columns: 1fr 1fr;
+      gap: $spacing-2xl;
+      align-items: start;
+    }
+
+    &__title {
+      font-size: $font-size-h2-desktop;
+    }
+
+    &__quote-text {
+      font-size: $font-size-body-desktop;
+    }
+  }
+}
+
+// Form Section
+.form-section {
+  background-color: $color-light-blue;
+  padding: $spacing-3xl $container-padding-mobile $spacing-4xl;
+
+  &__container {
+    max-width: 600px;
+    margin: 0 auto;
+    color: $color-white;
+  }
+
+  &__title {
+    font-size: $font-size-h2-mobile;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-tight;
+    text-align: center;
+    margin: 0 0 $spacing-sm 0;
+  }
+
+  &__subtitle {
+    font-size: $font-size-body;
+    font-weight: $font-weight-semibold;
+    text-align: center;
+    margin: 0 0 $spacing-md 0;
+  }
+
+  &__description {
+    font-size: $font-size-body;
+    line-height: $line-height-relaxed;
+    text-align: center;
+    margin: 0 0 $spacing-xl 0;
+  }
+
+  @media (min-width: $breakpoint-mobile) {
+    padding: $spacing-3xl $container-padding-tablet $spacing-4xl;
+
+    &__title {
+      font-size: 32px;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: $spacing-4xl $container-padding-desktop;
+
+    &__title {
+      font-size: $font-size-h2-desktop;
+    }
+
+    &__description {
+      font-size: $font-size-body-desktop;
+    }
+  }
+}
+
+// Inquiry Form
+.inquiry-form {
+  &__field {
+    margin-bottom: $spacing-md;
+  }
+
+  &__actions {
+    margin-top: $spacing-lg;
+    text-align: center;
+  }
+
+  &__submit {
+    ::ng-deep .btn {
+      background-color: $color-white;
+      color: $color-primary-blue;
+      border: none;
+      padding: $spacing-sm $spacing-2xl;
+      font-weight: $font-weight-semibold;
+      min-width: 200px;
+
+      &:hover:not(:disabled) {
+        background-color: $color-light-gray;
+      }
+
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &__message {
+    margin-top: $spacing-md;
+    padding: $spacing-sm $spacing-md;
+    border-radius: $border-radius-sm;
+    text-align: center;
+    font-size: $font-size-body;
+    line-height: $line-height-normal;
+
+    &--success {
+      background-color: rgba(76, 175, 80, 0.2);
+      border: 1px solid #4CAF50;
+      color: $color-white;
+    }
+
+    &--error {
+      background-color: rgba(244, 67, 54, 0.2);
+      border: 1px solid #F44336;
+      color: $color-white;
+    }
+  }
+}
+
+// Form input overrides for this page
+::ng-deep {
+  .form__input,
+  .form__textarea {
+    background-color: $color-white;
+    border: 1px solid $color-border-gray;
+    border-radius: $border-radius-sm;
+    padding: $spacing-sm $spacing-md;
+    font-size: $font-size-body;
+    line-height: $line-height-normal;
+    width: 100%;
+    color: $color-dark-text;
+    font-family: $font-family-primary;
+
+    &::placeholder {
+      color: $color-medium-gray;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $color-primary-blue;
+      box-shadow: 0 0 0 2px rgba(11, 79, 138, 0.1);
+    }
+  }
+
+  .form__textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+}

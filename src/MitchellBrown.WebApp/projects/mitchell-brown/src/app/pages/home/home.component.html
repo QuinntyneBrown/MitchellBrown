@@ -1,0 +1,152 @@
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero__container">
+    <h1 class="hero__headline">
+      Let <span class="hero__headline--emphasis">your</span> finances <span class="hero__headline--emphasis">grow.</span>
+    </h1>
+    <app-button 
+      variant="outline" 
+      size="large"
+      (buttonClick)="onHeroCTA()"
+      class="hero__cta"
+    >
+      Request a Free Info Session
+    </app-button>
+  </div>
+</section>
+
+<!-- What We Do Section -->
+<section class="services">
+  <div class="services__container">
+    <h2 class="services__title">What we do</h2>
+    <div class="services__grid">
+      <app-card
+        *ngFor="let service of services"
+        [title]="service.title"
+        [description]="service.description"
+        [imageUrl]="service.imageUrl"
+        class="services__card"
+      ></app-card>
+    </div>
+  </div>
+</section>
+
+<!-- Get in Touch Section -->
+<section class="contact">
+  <div class="contact__container">
+    <div class="contact__content">
+      <h2 class="contact__title">Get in touch</h2>
+      
+      <div class="contact__info">
+        <div class="contact__info-item">
+          <h3 class="contact__info-label">Main Office</h3>
+          <p class="contact__info-text">Mississauga, ON</p>
+        </div>
+        
+        <div class="contact__info-item">
+          <h3 class="contact__info-label">Email Address</h3>
+          <p class="contact__info-text">
+            <a href="mailto:mitchellbrownfinance@gmail.com" class="contact__link">
+              mitchellbrownfinance&#64;gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+      
+      <blockquote class="contact__quote">
+        <p class="contact__quote-text">
+          "Your need of finance is much greater than your need of protection"
+        </p>
+        <cite class="contact__quote-author">R. Nelson Nash</cite>
+      </blockquote>
+    </div>
+    
+    <div class="contact__image-wrapper">
+      <img 
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Crect fill='%237BC8F6' width='600' height='400'/%3E%3Crect x='150' y='100' width='100' height='200' fill='%23999'/%3E%3Crect x='350' y='80' width='120' height='220' fill='%23777'/%3E%3C/svg%3E" 
+        alt="Office building" 
+        class="contact__image"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Request Free Information Form Section -->
+<section class="form-section" id="request-info">
+  <div class="form-section__container">
+    <h2 class="form-section__title">Request Free Information</h2>
+    <p class="form-section__subtitle">Thank you for taking the first step to learn more!</p>
+    <p class="form-section__description">
+      We would love the opportunity to show you what we can offer and how that will benefit you along with connecting with you soon.
+    </p>
+    
+    <form [formGroup]="inquiryForm" (ngSubmit)="onSubmit()" class="inquiry-form">
+      <div class="inquiry-form__field">
+        <app-input
+          formControlName="name"
+          type="text"
+          placeholder="Name"
+          [required]="true"
+          id="name"
+          autocomplete="name"
+        ></app-input>
+      </div>
+      
+      <div class="inquiry-form__field">
+        <app-input
+          formControlName="email"
+          type="email"
+          placeholder="Email"
+          [required]="true"
+          id="email"
+          autocomplete="email"
+        ></app-input>
+      </div>
+      
+      <div class="inquiry-form__field">
+        <app-input
+          formControlName="subject"
+          type="text"
+          placeholder="Subject"
+          [required]="true"
+          id="subject"
+        ></app-input>
+      </div>
+      
+      <div class="inquiry-form__field">
+        <app-textarea
+          formControlName="message"
+          placeholder="Message"
+          [required]="true"
+          [rows]="6"
+          id="message"
+        ></app-textarea>
+      </div>
+      
+      <div class="inquiry-form__actions">
+        <app-button
+          type="submit"
+          variant="primary"
+          size="large"
+          [disabled]="inquiryForm.invalid || isSubmitting"
+          class="inquiry-form__submit"
+        >
+          {{ isSubmitting ? 'Submitting...' : 'Submit' }}
+        </app-button>
+      </div>
+      
+      <div *ngIf="submitSuccess" class="inquiry-form__message inquiry-form__message--success">
+        Thank you! Your inquiry has been submitted successfully.
+      </div>
+      
+      <div *ngIf="submitError" class="inquiry-form__message inquiry-form__message--error">
+        There was an error submitting your inquiry. Please try again.
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<app-footer
+  [copyright]="'© 2026 Mitchell Brown Financial. All rights reserved.'"
+></app-footer>
