@@ -9,7 +9,10 @@
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
       "mitchell-brown-components": [
-        "./dist/mitchell-brown-components"
+        "./projects/mitchell-brown-components/src/public-api.ts"
+      ],
+      "mitchell-brown-components/*": [
+        "./projects/mitchell-brown-components/src/*"
       ]
     },
     "noImplicitReturns": true,
