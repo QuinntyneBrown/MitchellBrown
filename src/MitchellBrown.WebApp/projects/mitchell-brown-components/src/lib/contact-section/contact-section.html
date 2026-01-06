@@ -1,0 +1,37 @@
+<section class="contact-section">
+  <div class="contact-section__container">
+    <h2 class="contact-section__title">{{ title }}</h2>
+    <div class="contact-section__content">
+      <div class="contact-section__info">
+        <div class="contact-section__info-group">
+          <h3 class="contact-section__label">Main Office</h3>
+          <p class="contact-section__text">{{ contactInfo.location }}</p>
+        </div>
+        <div class="contact-section__info-group">
+          <h3 class="contact-section__label">Email Address</h3>
+          <a 
+            class="contact-section__email" 
+            [href]="'mailto:' + contactInfo.email"
+            [attr.aria-label]="'Send email to ' + contactInfo.email"
+          >
+            {{ contactInfo.email }}
+          </a>
+        </div>
+        <div *ngIf="contactInfo.quote" class="contact-section__quote">
+          <p class="contact-section__quote-text">{{ contactInfo.quote }}</p>
+          <p *ngIf="contactInfo.quoteAuthor" class="contact-section__quote-author">
+            {{ contactInfo.quoteAuthor }}
+          </p>
+        </div>
+      </div>
+      <div *ngIf="imageSrc" class="contact-section__image-container">
+        <img
+          class="contact-section__image"
+          [src]="imageSrc"
+          [alt]="imageAlt"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</section>

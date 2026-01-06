@@ -1,0 +1,85 @@
+<section class="inquiry-form">
+  <div class="inquiry-form__container">
+    <h2 class="inquiry-form__title">Request Free Information</h2>
+    <p class="inquiry-form__subtitle">Thank you for taking this first step to learn more!</p>
+    <p class="inquiry-form__description">
+      We would love the opportunity to show you what we can offer and how that will benefit you and your family. 
+      Looking forward to speaking with you soon.
+    </p>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="inquiry-form__form">
+      <div class="inquiry-form__field">
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          class="inquiry-form__input"
+          [class.inquiry-form__input--error]="shouldShowError('name')"
+          placeholder="Name"
+          aria-label="Your name"
+          [attr.aria-invalid]="shouldShowError('name')"
+          [attr.aria-describedby]="shouldShowError('name') ? 'name-error' : null"
+        />
+        <span *ngIf="shouldShowError('name')" id="name-error" class="inquiry-form__error" role="alert">
+          {{ getErrorMessage('name') }}
+        </span>
+      </div>
+
+      <div class="inquiry-form__field">
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          class="inquiry-form__input"
+          [class.inquiry-form__input--error]="shouldShowError('email')"
+          placeholder="Email"
+          aria-label="Your email address"
+          [attr.aria-invalid]="shouldShowError('email')"
+          [attr.aria-describedby]="shouldShowError('email') ? 'email-error' : null"
+        />
+        <span *ngIf="shouldShowError('email')" id="email-error" class="inquiry-form__error" role="alert">
+          {{ getErrorMessage('email') }}
+        </span>
+      </div>
+
+      <div class="inquiry-form__field">
+        <input
+          type="text"
+          id="subject"
+          formControlName="subject"
+          class="inquiry-form__input"
+          placeholder="Subject"
+          aria-label="Subject (optional)"
+        />
+      </div>
+
+      <div class="inquiry-form__field">
+        <textarea
+          id="message"
+          formControlName="message"
+          class="inquiry-form__textarea"
+          [class.inquiry-form__textarea--error]="shouldShowError('message')"
+          placeholder="Message"
+          aria-label="Your message"
+          [attr.aria-invalid]="shouldShowError('message')"
+          [attr.aria-describedby]="shouldShowError('message') ? 'message-error' : null"
+          rows="5"
+        ></textarea>
+        <span *ngIf="shouldShowError('message')" id="message-error" class="inquiry-form__error" role="alert">
+          {{ getErrorMessage('message') }}
+        </span>
+      </div>
+
+      <div class="inquiry-form__actions">
+        <button
+          type="submit"
+          class="inquiry-form__submit"
+          [disabled]="isSubmitting"
+          [attr.aria-busy]="isSubmitting"
+        >
+          {{ isSubmitting ? 'Submitting...' : 'Submit' }}
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

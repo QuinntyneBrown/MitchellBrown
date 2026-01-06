@@ -1,0 +1,18 @@
+<section class="hero" role="banner">
+  <div class="hero__container">
+    <h1 class="hero__headline">
+      <span class="hero__headline-text">Let </span>
+      <span class="hero__headline-emphasis">{{ headlineEmphasis }}</span>
+      <span class="hero__headline-text"> finances </span>
+      <span class="hero__headline-text">grow.</span>
+    </h1>
+    <button
+      type="button"
+      class="hero__cta"
+      [attr.aria-label]="ctaAriaLabel"
+      (click)="onCtaClick()"
+    >
+      {{ ctaText }}
+    </button>
+  </div>
+</section>

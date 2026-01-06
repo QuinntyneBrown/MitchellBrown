@@ -1,0 +1,71 @@
+@import '../tokens';
+
+.hero {
+  background-color: $color-primary-orange;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-3xl $container-padding-mobile;
+
+  @media (min-width: $breakpoint-tablet) {
+    min-height: 500px;
+    padding: $spacing-4xl $container-padding-desktop;
+  }
+
+  &__container {
+    max-width: $container-max-width;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__headline {
+    font-family: $font-family-primary;
+    font-size: $font-size-hero-mobile;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-tight;
+    color: $color-white;
+    margin: 0 0 $spacing-xl 0;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: $font-size-hero-desktop;
+    }
+  }
+
+  &__headline-text {
+    color: $color-white;
+  }
+
+  &__headline-emphasis {
+    color: $color-dark-blue;
+    font-weight: $font-weight-extrabold;
+  }
+
+  &__cta {
+    font-family: $font-family-primary;
+    font-size: $font-size-body;
+    font-weight: $font-weight-semibold;
+    color: $color-primary-blue;
+    background-color: transparent;
+    border: 2px solid $color-primary-blue;
+    border-radius: $border-radius-sm;
+    padding: 14px 32px;
+    cursor: pointer;
+    transition: all $transition-normal;
+    line-height: $line-height-normal;
+
+    &:hover {
+      background-color: $color-primary-blue;
+      color: $color-white;
+    }
+
+    &:focus {
+      outline: 2px solid $color-dark-blue;
+      outline-offset: 2px;
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+}
