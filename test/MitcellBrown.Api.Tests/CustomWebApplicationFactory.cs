@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using MitchellBrown.Core;
 using MitchellBrown.Core.Services;
 using MitchellBrown.Infrastructure.Services;
 
@@ -21,6 +22,14 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
 
         builder.ConfigureServices(services =>
         {
+            // Remove existing DbContext registration
+            var descriptor = services.SingleOrDefault(
+                d => d.ServiceType == typeof(DbContextOptions<MitchellBrownContext>));
+            if (descriptor != null)
+            {
+                services.Remove(descriptor);
+            }
+
             // Add InMemory database for testing - using shared database name
             services.AddDbContext<MitchellBrownContext>(options =>
             {
@@ -30,6 +39,9 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
             // Add IMitchellBrownContext
             services.AddScoped<IMitchellBrownContext>(provider =>
                 provider.GetRequiredService<MitchellBrownContext>());
+
+            // Add ITenantContext for multi-tenancy support
+            services.AddScoped<ITenantContext, TenantContext>();
         });
     }
 }
