@@ -29,20 +29,26 @@ public static class DbInitializer
                 return;
             }
 
+            // Use a default tenant ID for seed data
+            var defaultTenantId = Guid.Parse("00000000-0000-0000-0000-000000000001");
+
             // Seed Services
             var services = new[]
             {
                 new Service(
+                    tenantId: defaultTenantId,
                     title: "Financial Needs Analysis",
                     description: "We can help you with meeting your financial goals, manage risk and plan for future needs such as life insurance coverage, retirement, or debt repayment.",
                     iconUrl: "/assets/images/financial-analysis-icon.png",
                     order: 1),
                 new Service(
+                    tenantId: defaultTenantId,
                     title: "Estate Planning",
                     description: "We can help you understand how to best preserve wealth and ensure financial security for beneficiaries.",
                     iconUrl: "/assets/images/estate-planning-icon.png",
                     order: 2),
                 new Service(
+                    tenantId: defaultTenantId,
                     title: "Insurance Needs",
                     description: "Insurance can play a vital role in the event finances will be needed most, and building up wealth for future generations.",
                     iconUrl: "/assets/images/insurance-icon.png",

@@ -8,12 +8,14 @@ namespace MitchellBrown.Core.Models.InquiryAggregate;
 public class Inquiry
 {
     public Inquiry(
+        Guid tenantId,
         InquiryType type,
         string firstName,
         string lastName,
         string email,
         string phoneNumber)
     {
+        TenantId = tenantId;
         Type = type;
         FirstName = firstName;
         LastName = lastName;
@@ -22,6 +24,8 @@ public class Inquiry
     }
 
     public Guid InquiryId { get; set; }
+
+    public Guid TenantId { get; set; }
     
     public InquiryType Type { get; set; }
 

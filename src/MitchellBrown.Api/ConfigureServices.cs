@@ -7,6 +7,8 @@ public static class ConfigureServices
 {
     public static void AddApiServices(this IServiceCollection services)
     {
+        services.AddHttpContextAccessor();
+
         services.AddCors(options => options.AddPolicy("CorsPolicy",
             builder => builder
             .WithOrigins("http://localhost:4200")
