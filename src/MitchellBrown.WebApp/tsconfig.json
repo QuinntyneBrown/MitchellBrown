@@ -38,6 +38,12 @@
     },
     {
       "path": "./projects/mitchell-brown-components/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/mitcehll-brown-admin/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/mitcehll-brown-admin/tsconfig.spec.json"
     }
   ]
 }
