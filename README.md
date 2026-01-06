@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/logo_blue.png" alt="Mitchell Brown Logo" width="200"/>
+</div>
+
 # MitchellBrown
 
 A comprehensive marketing website and customer inquiry management system for Mitchell Brown, a life insurance agent and financial planning professional.
