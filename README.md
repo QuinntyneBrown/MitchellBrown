@@ -69,6 +69,10 @@ The backend is organized into three distinct projects:
 
 ```
 MitchellBrown/
+├── infra/
+│   ├── main.bicep                 # Azure IaC entrypoint (Static Web App)
+│   └── modules/
+│       └── mitchellBrownSwa.bicep # SWA module (Microsoft.Web/staticSites)
 ├── src/
 │   ├── MitchellBrown.Api/          # Web API controllers and endpoints
 │   ├── MitchellBrown.Core/         # Domain models and business logic
@@ -102,6 +106,42 @@ MitchellBrown/
 - [Node.js](https://nodejs.org/) (LTS version recommended)
 - [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) or SQL Server
 - [Angular CLI](https://angular.io/cli) (optional, for Angular-specific commands)
+- [Azure CLI](https://learn.microsoft.com/cli/azure/) (optional, for deploying Bicep)
+
+## Infrastructure (Azure Static Web Apps)
+
+Infrastructure-as-code lives in:
+
+- `infra/main.bicep` (entrypoint)
+- `infra/modules/mitchellBrownSwa.bicep` (module that provisions `Microsoft.Web/staticSites`)
+
+The module supports two modes:
+
+1. **Provision-only** (default): leave `repositoryUrl`, `branch`, and `repositoryToken` empty.
+2. **GitHub integration**: set `repositoryUrl`, `branch`, and `repositoryToken` to have Azure generate the GitHub Actions workflow and configure secrets.
+
+Recommended values for this repo when using GitHub integration:
+
+- `appLocation`: `src/MitchellBrown.WebApp`
+- `outputLocation`: `dist/mitchell-brown`
+- `apiLocation`: empty (unless you add a SWA API)
+
+Example (GitHub integration):
+
+```bash
+az deployment group create \
+   --resource-group <rg-name> \
+   --template-file infra/main.bicep \
+   --parameters \
+      staticWebAppName=<swa-name> \
+      repositoryUrl=<https-github-repo-url> \
+      branch=main \
+      repositoryToken=<github-token> \
+      appLocation=src/MitchellBrown.WebApp \
+      outputLocation=dist/mitchell-brown
+```
+
+Keep `repositoryToken` in a secret store (e.g., pipeline secret variable); dont commit it.
 
 ### Backend Setup
 

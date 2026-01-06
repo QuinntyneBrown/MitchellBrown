@@ -27,11 +27,11 @@
     <mb-inquiry-form
       (formSubmit)="onFormSubmit($event)"
     ></mb-inquiry-form>
-    
+
     <div *ngIf="submitSuccess" class="inquiry-form__message inquiry-form__message--success">
       Thank you! Your inquiry has been submitted successfully.
     </div>
-    
+
     <div *ngIf="submitError" class="inquiry-form__message inquiry-form__message--error">
       There was an error submitting your inquiry. Please try again.
     </div>

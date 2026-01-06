@@ -21,10 +21,10 @@ const OFFICE_IMAGE_PLACEHOLDER = "data:image/svg+xml,%3Csvg xmlns='http://www.w3
     InquiryForm,
     Footer
   ],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  templateUrl: './home.html',
+  styleUrl: './home.scss'
 })
-export class HomeComponent {
+export class Home {
   isSubmitting = false;
   submitSuccess = false;
   submitError = false;
