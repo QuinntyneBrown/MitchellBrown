@@ -34,7 +34,7 @@ public class TenantContext : ITenantContext
             }
 
             // Fallback to X-Tenant-Id header
-            var tenantIdHeader = httpContext.Request.Headers["X-Tenant-Id"].FirstOrDefault();
+            var tenantIdHeader = httpContext.Request.Headers[Constants.TenantIdHeaderName].FirstOrDefault();
             if (!string.IsNullOrEmpty(tenantIdHeader) && Guid.TryParse(tenantIdHeader, out var tenantIdFromHeader))
             {
                 return tenantIdFromHeader;

@@ -4,6 +4,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MitchellBrown.Core;
 using MitchellBrown.Core.Models.ServiceAggregate;
 using MitchellBrown.Infrastructure.Services;
 
@@ -29,8 +30,8 @@ public static class DbInitializer
                 return;
             }
 
-            // Use a default tenant ID for seed data
-            var defaultTenantId = Guid.Parse("00000000-0000-0000-0000-000000000001");
+            // Use the default tenant ID for seed data
+            var defaultTenantId = Constants.DefaultTenantId;
 
             // Seed Services
             var services = new[]
