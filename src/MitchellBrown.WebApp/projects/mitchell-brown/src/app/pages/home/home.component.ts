@@ -7,6 +7,10 @@ import { InquiryForm, InquiryFormData } from 'mitchell-brown-components';
 import { Footer } from 'mitchell-brown-components';
 import { InquiryService } from '../../services/inquiry.service';
 
+// Placeholder SVG constants
+const SERVICE_CARD_PLACEHOLDER = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23E5E5E5" width="400" height="300"/%3E%3Ccircle cx="200" cy="150" r="60" fill="%23999"/%3E%3C/svg%3E';
+const OFFICE_IMAGE_PLACEHOLDER = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Crect fill='%237BC8F6' width='600' height='400'/%3E%3Crect x='150' y='100' width='100' height='200' fill='%23999'/%3E%3Crect x='350' y='80' width='120' height='220' fill='%23777'/%3E%3C/svg%3E";
+
 @Component({
   selector: 'app-home',
   imports: [
@@ -29,19 +33,19 @@ export class HomeComponent {
     {
       title: 'Financial Needs Analysis',
       description: 'We can help you with meeting your financial goals, manage risk and plan for future needs such as life insurance coverage, retirement, or debt repayment.',
-      imageSrc: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23E5E5E5" width="400" height="300"/%3E%3Ccircle cx="200" cy="150" r="60" fill="%23999"/%3E%3C/svg%3E',
+      imageSrc: SERVICE_CARD_PLACEHOLDER,
       imageAlt: 'Financial Needs Analysis'
     },
     {
       title: 'Estate Planning',
       description: 'We can help you understand strategies to preserve wealth and ensure financial security for beneficiaries.',
-      imageSrc: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23E5E5E5" width="400" height="300"/%3E%3Ccircle cx="200" cy="150" r="60" fill="%23999"/%3E%3C/svg%3E',
+      imageSrc: SERVICE_CARD_PLACEHOLDER,
       imageAlt: 'Estate Planning'
     },
     {
       title: 'Insurance Needs',
       description: 'Assess which types of life and other insurance will be needed most, and building up wealth for future generations.',
-      imageSrc: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23E5E5E5" width="400" height="300"/%3E%3Ccircle cx="200" cy="150" r="60" fill="%23999"/%3E%3C/svg%3E',
+      imageSrc: SERVICE_CARD_PLACEHOLDER,
       imageAlt: 'Insurance Needs'
     }
   ];
@@ -53,7 +57,7 @@ export class HomeComponent {
     quoteAuthor: 'R. Nelson Nash'
   };
 
-  contactImageSrc = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400'%3E%3Crect fill='%237BC8F6' width='600' height='400'/%3E%3Crect x='150' y='100' width='100' height='200' fill='%23999'/%3E%3Crect x='350' y='80' width='120' height='220' fill='%23777'/%3E%3C/svg%3E";
+  contactImageSrc = OFFICE_IMAGE_PLACEHOLDER;
 
   constructor(
     private inquiryService: InquiryService
