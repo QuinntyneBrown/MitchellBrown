@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MitchellBrown.Infrastructure.Services;
 
@@ -11,9 +12,11 @@ using MitchellBrown.Infrastructure.Services;
 namespace MitchellBrown.Infrastructure.Migrations
 {
     [DbContext(typeof(MitchellBrownContext))]
-    partial class MitchellBrownContextModelSnapshot : ModelSnapshot
+    [Migration("20260106005939_AddMultiTenancy")]
+    partial class AddMultiTenancy
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

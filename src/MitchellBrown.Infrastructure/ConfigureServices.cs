@@ -3,6 +3,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using MitchellBrown.Core;
 using MitchellBrown.Core.Services;
 using MitchellBrown.Infrastructure.Services;
 
@@ -12,6 +13,8 @@ public static class ConfigureServices
 {
     public static void AddInfrastructureServices(this IServiceCollection services, string connectionString)
     {
+        services.AddScoped<ITenantContext, TenantContext>();
+
         services.AddDbContext<MitchellBrownContext>(options =>
             options.UseSqlServer(connectionString));
 

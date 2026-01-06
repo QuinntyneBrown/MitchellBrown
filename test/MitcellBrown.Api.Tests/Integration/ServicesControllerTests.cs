@@ -25,7 +25,9 @@ public class ServicesControllerTests : IClassFixture<CustomWebApplicationFactory
     public async Task GetServices_ReturnsSuccessAndCorrectContentType()
     {
         // Arrange
-        await SeedTestDataAsync();
+        var testTenantId = Guid.NewGuid();
+        _client.DefaultRequestHeaders.Add("X-Tenant-Id", testTenantId.ToString());
+        await SeedTestDataAsync(testTenantId);
 
         // Act
         var response = await _client.GetAsync("/api/services");
@@ -39,7 +41,9 @@ public class ServicesControllerTests : IClassFixture<CustomWebApplicationFactory
     public async Task GetServices_ReturnsSeededServices()
     {
         // Arrange
-        await SeedTestDataAsync();
+        var testTenantId = Guid.NewGuid();
+        _client.DefaultRequestHeaders.Add("X-Tenant-Id", testTenantId.ToString());
+        await SeedTestDataAsync(testTenantId);
 
         // Act
         var response = await _client.GetAsync("/api/services");
@@ -58,14 +62,17 @@ public class ServicesControllerTests : IClassFixture<CustomWebApplicationFactory
     public async Task GetServices_ReturnsOnlyEnabledServices()
     {
         // Arrange
+        var testTenantId = Guid.NewGuid();
+        _client.DefaultRequestHeaders.Add("X-Tenant-Id", testTenantId.ToString());
+
         using (var scope = _factory.Services.CreateScope())
         {
             var context = scope.ServiceProvider.GetRequiredService<IMitchellBrownContext>();
             
             var services = new[]
             {
-                new Service("Enabled Service", "Description", "/icon.png", 1) { Enabled = true },
-                new Service("Disabled Service", "Description", "/icon.png", 2) { Enabled = false }
+                new Service(testTenantId, "Enabled Service", "Description", "/icon.png", 1) { Enabled = true },
+                new Service(testTenantId, "Disabled Service", "Description", "/icon.png", 2) { Enabled = false }
             };
 
             foreach (var service in services)
@@ -89,15 +96,18 @@ public class ServicesControllerTests : IClassFixture<CustomWebApplicationFactory
     public async Task GetServices_ReturnsServicesInCorrectOrder()
     {
         // Arrange
+        var testTenantId = Guid.NewGuid();
+        _client.DefaultRequestHeaders.Add("X-Tenant-Id", testTenantId.ToString());
+
         using (var scope = _factory.Services.CreateScope())
         {
             var context = scope.ServiceProvider.GetRequiredService<IMitchellBrownContext>();
             
             var services = new[]
             {
-                new Service("Third", "Description", "/icon.png", 3),
-                new Service("First", "Description", "/icon.png", 1),
-                new Service("Second", "Description", "/icon.png", 2)
+                new Service(testTenantId, "Third", "Description", "/icon.png", 3),
+                new Service(testTenantId, "First", "Description", "/icon.png", 1),
+                new Service(testTenantId, "Second", "Description", "/icon.png", 2)
             };
 
             foreach (var service in services)
@@ -119,7 +129,7 @@ public class ServicesControllerTests : IClassFixture<CustomWebApplicationFactory
         Assert.Equal("Third", result.Services[2].Title);
     }
 
-    private async Task SeedTestDataAsync()
+    private async Task SeedTestDataAsync(Guid tenantId)
     {
         using var scope = _factory.Services.CreateScope();
         var context = scope.ServiceProvider.GetRequiredService<IMitchellBrownContext>();
@@ -127,16 +137,19 @@ public class ServicesControllerTests : IClassFixture<CustomWebApplicationFactory
         var services = new[]
         {
             new Service(
+                tenantId: tenantId,
                 title: "Financial Needs Analysis",
                 description: "We can help you with meeting your financial goals, manage risk and plan for future needs such as life insurance coverage, retirement, or debt repayment.",
                 iconUrl: "/assets/images/financial-analysis-icon.png",
                 order: 1),
             new Service(
+                tenantId: tenantId,
                 title: "Estate Planning",
                 description: "We can help you understand how to best preserve wealth and ensure financial security for beneficiaries.",
                 iconUrl: "/assets/images/estate-planning-icon.png",
                 order: 2),
             new Service(
+                tenantId: tenantId,
                 title: "Insurance Needs",
                 description: "Insurance can play a vital role in the event finances will be needed most, and building up wealth for future generations.",
                 iconUrl: "/assets/images/insurance-icon.png",

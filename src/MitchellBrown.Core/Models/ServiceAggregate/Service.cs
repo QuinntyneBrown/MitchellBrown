@@ -6,11 +6,13 @@ namespace MitchellBrown.Core.Models.ServiceAggregate;
 public class Service
 {
     public Service(
+        Guid tenantId,
         string title,
         string description,
         string iconUrl,
         int order)
     {
+        TenantId = tenantId;
         Title = title;
         Description = description;
         IconUrl = iconUrl;
@@ -20,6 +22,8 @@ public class Service
     }
 
     public Guid ServiceId { get; set; }
+
+    public Guid TenantId { get; set; }
 
     public string Title { get; set; }
 

@@ -2,6 +2,7 @@
 // Licensed under the MIT License. See License.txt in the project root for license information.
 
 using MediatR;
+using MitchellBrown.Core;
 using MitchellBrown.Core.Models.InquiryAggregate;
 using MitchellBrown.Core.Models.InquiryAggregate.Enums;
 using MitchellBrown.Core.Services;
@@ -25,15 +26,18 @@ public class CreateInquiryCommandResponse
 public class CreateInquiryCommandHandler : IRequestHandler<CreateInquiryCommand, CreateInquiryCommandResponse>
 {
     private readonly IMitchellBrownContext _context;
+    private readonly ITenantContext _tenantContext;
 
-    public CreateInquiryCommandHandler(IMitchellBrownContext context)
+    public CreateInquiryCommandHandler(IMitchellBrownContext context, ITenantContext tenantContext)
     {
         _context = context;
+        _tenantContext = tenantContext;
     }
 
     public async Task<CreateInquiryCommandResponse> Handle(CreateInquiryCommand request, CancellationToken cancellationToken)
     {
         var inquiry = new Inquiry(
+            tenantId: _tenantContext.TenantId,
             type: request.Type,
             firstName: request.FirstName,
             lastName: request.LastName,
