@@ -37,20 +37,33 @@ Implements tenant resolution from:
 
 #### 3. Entity Tenant Properties
 
-All aggregate root entities include a `TenantId` property:
+All aggregate root entities should include a `TenantId` property for tenant isolation:
 
-- **Inquiry**: `TenantId` property for tenant isolation
-- **Service**: `TenantId` property for tenant isolation
+- **Inquiry**: Add `TenantId` property (Guid type, required)
+- **Service**: Add `TenantId` property (Guid type, required)
+
+*Note: These properties need to be added to the entity classes as part of implementing multi-tenancy.*
 
 #### 4. Global Query Filters
 
-The `MitchellBrownContext` DbContext applies automatic query filters:
+The `MitchellBrownContext` DbContext applies automatic query filters. The ITenantContext should be injected via constructor:
 
 ```csharp
-protected override void OnModelCreating(ModelBuilder modelBuilder)
+public class MitchellBrownContext : DbContext, IMitchellBrownContext
 {
-    modelBuilder.Entity<Inquiry>().HasQueryFilter(e => e.TenantId == _tenantContext.TenantId);
-    modelBuilder.Entity<Service>().HasQueryFilter(e => e.TenantId == _tenantContext.TenantId);
+    private readonly ITenantContext _tenantContext;
+
+    public MitchellBrownContext(DbContextOptions<MitchellBrownContext> options, ITenantContext tenantContext)
+        : base(options)
+    {
+        _tenantContext = tenantContext;
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Inquiry>().HasQueryFilter(e => e.TenantId == _tenantContext.TenantId);
+        modelBuilder.Entity<Service>().HasQueryFilter(e => e.TenantId == _tenantContext.TenantId);
+    }
 }
 ```
 
@@ -79,19 +92,23 @@ Tokens must include a `tenant_id` claim:
 ```json
 {
   "sub": "user-id",
-  "tenant_id": "00000000-0000-0000-0000-000000000001",
+  "tenant_id": "your-tenant-guid-here",
   "iat": 1234567890,
   "exp": 1234571490
 }
 ```
+
+*Note: Replace `your-tenant-guid-here` with the actual tenant GUID.*
 
 ### Header-Based Tenant Resolution
 
 For scenarios where JWT is not available, clients can send:
 
 ```
-X-Tenant-Id: 00000000-0000-0000-0000-000000000001
+X-Tenant-Id: your-tenant-guid-here
 ```
+
+*Note: Replace `your-tenant-guid-here` with the actual tenant GUID.*
 
 ## Database Schema
 
@@ -151,11 +168,13 @@ ALTER TABLE EntityName ALTER COLUMN TenantId UNIQUEIDENTIFIER NOT NULL;
 {
   "MultiTenancy": {
     "Enabled": true,
-    "DefaultTenantId": "00000000-0000-0000-0000-000000000001",
+    "DefaultTenantId": "your-tenant-guid-here",
     "RequireTenant": true
   }
 }
 ```
+
+*Note: Replace `your-tenant-guid-here` with an actual GUID for your default tenant (e.g., generated using `Guid.NewGuid()`).*
 
 ## Testing
 
