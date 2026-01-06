@@ -47,7 +47,7 @@ export class HomeComponent {
     },
     {
       title: 'Insurance Needs',
-      description: 'Assess which types of life and other finances will be needed most, and building up wealth for future generations.',
+      description: 'Assess which types of life and other insurance will be needed most, and building up wealth for future generations.',
       imageUrl: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23E5E5E5" width="400" height="300"/%3E%3Ccircle cx="200" cy="150" r="60" fill="%23999"/%3E%3C/svg%3E'
     }
   ];

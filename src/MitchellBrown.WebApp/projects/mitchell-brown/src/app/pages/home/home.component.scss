@@ -109,6 +109,7 @@
     }
   }
 
+  // Note: $breakpoint-tablet is 1024px (desktop size) in tokens
   @media (min-width: $breakpoint-tablet) {
     padding: $spacing-4xl $container-padding-desktop;
 
