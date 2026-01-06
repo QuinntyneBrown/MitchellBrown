@@ -1,22 +1,5 @@
 <header class="header">
   <div class="header__container">
-    <div class="header__brand">
-      <a
-        class="header__logo-link"
-        href="#"
-        (click)="onLogoClick(); $event.preventDefault()"
-        [attr.aria-label]="logoAlt || title"
-      >
-        <img
-          *ngIf="logoSrc"
-          class="header__logo"
-          [src]="logoSrc"
-          [alt]="logoAlt || title"
-        />
-        <span *ngIf="!logoSrc && title" class="header__title">{{ title }}</span>
-      </a>
-    </div>
-
     <button
       class="header__menu-toggle"
       type="button"
@@ -55,5 +38,22 @@
         </li>
       </ul>
     </nav>
+
+    <div class="header__brand">
+      <a
+        class="header__logo-link"
+        href="#"
+        (click)="onLogoClick(); $event.preventDefault()"
+        [attr.aria-label]="logoAlt || title"
+      >
+        <img
+          *ngIf="logoSrc"
+          class="header__logo"
+          [src]="logoSrc"
+          [alt]="logoAlt || title"
+        />
+        <span *ngIf="!logoSrc && title" class="header__title">{{ title }}</span>
+      </a>
+    </div>
   </div>
 </header>

@@ -81,12 +81,12 @@ $breakpoint-desktop: 1200px;
 // Header Specific Tokens
 $header-height-mobile: 70px;
 $header-height-desktop: 70px;
-$header-bg-color: $color-white;
-$header-border-color: $color-border-gray;
-$header-text-color: $color-dark-blue;
+$header-bg-color: $color-primary-orange;
+$header-border-color: $color-primary-orange;
+$header-text-color: $color-primary-blue;
 $header-link-color: $color-primary-blue;
-$header-link-hover-color: $color-primary-orange;
-$header-link-active-color: $color-primary-orange;
+$header-link-hover-color: $color-primary-blue;
+$header-link-active-color: $color-primary-blue;
 
 // Z-index Tokens
 $z-index-header: 1000;
