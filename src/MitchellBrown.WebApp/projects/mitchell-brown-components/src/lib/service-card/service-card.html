@@ -1,0 +1,14 @@
+<article class="service-card">
+  <div *ngIf="imageSrc" class="service-card__image-container">
+    <img
+      class="service-card__image"
+      [src]="imageSrc"
+      [alt]="imageAlt || title"
+      loading="lazy"
+    />
+  </div>
+  <div class="service-card__content">
+    <h3 class="service-card__title">{{ title }}</h3>
+    <p class="service-card__description">{{ description }}</p>
+  </div>
+</article>

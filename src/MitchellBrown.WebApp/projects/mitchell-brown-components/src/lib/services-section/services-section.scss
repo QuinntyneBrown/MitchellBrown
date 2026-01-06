@@ -1,0 +1,43 @@
+@import '../tokens';
+
+.services-section {
+  background-color: $color-light-blue;
+  padding: $spacing-3xl $container-padding-mobile;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: $spacing-4xl $container-padding-desktop;
+  }
+
+  &__container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: $font-family-primary;
+    font-size: $font-size-h2-mobile;
+    font-weight: $font-weight-bold;
+    color: $color-white;
+    margin: 0 0 $spacing-2xl 0;
+    line-height: $line-height-tight;
+    text-align: left;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: $font-size-h2-desktop;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-lg;
+
+    @media (min-width: $breakpoint-mobile) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

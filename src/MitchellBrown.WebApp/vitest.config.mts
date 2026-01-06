@@ -12,15 +12,15 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: ['./projects/mitchell-brown/src/test-setup.ts'],
-    include: ['projects/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    setupFiles: [resolve(__dirname, './projects/mitchell-brown/src/test-setup.ts')],
+    include: ['projects/**/*.spec.ts'],
     exclude: ['node_modules', 'dist', '**/e2e/**'],
     pool: 'forks',
     poolOptions: {
       forks: {
         singleFork: true,
       },
-    },
+    } as any,
     server: {
       deps: {
         inline: ['@angular/**'],
@@ -33,7 +33,9 @@ export default defineConfig({
         'node_modules/',
         '**/test-setup.ts',
         '**/*.spec.ts',
+        '**/*.stories.ts',
         '**/main.ts',
+        '**/index.ts',
       ],
     },
   },

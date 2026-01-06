@@ -1,0 +1,123 @@
+@import '../tokens';
+
+.contact-section {
+  background-color: $color-light-blue;
+  padding: $spacing-3xl $container-padding-mobile;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: $spacing-4xl $container-padding-desktop;
+  }
+
+  &__container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: $font-family-primary;
+    font-size: $font-size-h2-mobile;
+    font-weight: $font-weight-bold;
+    color: $color-white;
+    margin: 0 0 $spacing-2xl 0;
+    line-height: $line-height-tight;
+    text-align: left;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: $font-size-h2-desktop;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-2xl;
+
+    @media (min-width: $breakpoint-tablet) {
+      flex-direction: row;
+      gap: $spacing-3xl;
+    }
+  }
+
+  &__info {
+    flex: 1;
+  }
+
+  &__info-group {
+    margin-bottom: $spacing-lg;
+  }
+
+  &__label {
+    font-family: $font-family-primary;
+    font-size: $font-size-body-desktop;
+    font-weight: $font-weight-semibold;
+    color: $color-light-blue-accent;
+    margin: 0 0 $spacing-xs 0;
+    line-height: $line-height-normal;
+  }
+
+  &__text {
+    font-family: $font-family-primary;
+    font-size: $font-size-body;
+    font-weight: $font-weight-regular;
+    color: $color-white;
+    margin: 0;
+    line-height: $line-height-relaxed;
+  }
+
+  &__email {
+    font-family: $font-family-primary;
+    font-size: $font-size-small;
+    font-weight: $font-weight-regular;
+    color: $color-white;
+    text-decoration: none;
+    transition: color $transition-normal;
+    display: inline-block;
+
+    &:hover {
+      color: $color-primary-orange;
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline: 2px solid $color-white;
+      outline-offset: 2px;
+    }
+  }
+
+  &__quote {
+    margin-top: $spacing-xl;
+  }
+
+  &__quote-text {
+    font-family: $font-family-primary;
+    font-size: 15px;
+    font-weight: $font-weight-regular;
+    font-style: italic;
+    color: $color-primary-orange;
+    margin: 0 0 $spacing-xs 0;
+    line-height: $line-height-relaxed;
+  }
+
+  &__quote-author {
+    font-family: $font-family-primary;
+    font-size: $font-size-small;
+    font-weight: $font-weight-regular;
+    color: $color-white;
+    margin: 0;
+    line-height: $line-height-normal;
+  }
+
+  &__image-container {
+    flex: 1;
+    border-radius: $border-radius-md;
+    overflow: hidden;
+    box-shadow: $shadow-lg;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}

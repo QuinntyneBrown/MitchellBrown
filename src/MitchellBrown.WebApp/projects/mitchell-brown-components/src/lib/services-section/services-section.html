@@ -1,0 +1,14 @@
+<section class="services-section">
+  <div class="services-section__container">
+    <h2 class="services-section__title">{{ title }}</h2>
+    <div class="services-section__grid">
+      <mb-service-card
+        *ngFor="let service of services"
+        [title]="service.title"
+        [description]="service.description"
+        [imageSrc]="service.imageSrc || ''"
+        [imageAlt]="service.imageAlt || ''"
+      ></mb-service-card>
+    </div>
+  </div>
+</section>
