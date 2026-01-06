@@ -1,0 +1,50 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Build results
+**/bin/
+**/obj/
+**/out/
+
+# IDE/Editor directories
+.vs/
+.vscode/
+.idea/
+*.sln.ide/
+
+# Test results
+**/TestResults/
+**/coverage/
+
+# Node modules and frontend build artifacts
+**/node_modules/
+**/dist/
+**/.angular/
+**/coverage/
+
+# Documentation
+*.md
+docs/
+
+# Infrastructure
+infra/
+
+# Misc
+**/*.user
+**/*.suo
+**/*.log
+*.txt
+!requirements.txt
+
+# Assets not needed for build
+assets/
+
+# Storybook
+**/.storybook/
+
+# CI/CD
+.github/
+.azure/
+.claude/
