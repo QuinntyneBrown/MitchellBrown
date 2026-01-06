@@ -18,7 +18,7 @@ public static class DbInitializer
         var logger = scope.ServiceProvider.GetRequiredService<ILogger<MitchellBrownContext>>();
 
         try
-        {
+        {            
             // Ensure database is created
             await context.Database.MigrateAsync();
 
