@@ -74,7 +74,7 @@
         <button
           type="submit"
           class="inquiry-form__submit"
-          [disabled]="isSubmitting"
+          [disabled]="form.invalid || isSubmitting"
           [attr.aria-busy]="isSubmitting"
         >
           {{ isSubmitting ? 'Submitting...' : 'Submit' }}
