@@ -19,9 +19,17 @@ public static class DbInitializer
         var logger = scope.ServiceProvider.GetRequiredService<ILogger<MitchellBrownContext>>();
 
         try
-        {            
+        {
             // Ensure database is created
-            await context.Database.MigrateAsync();
+            // Use EnsureCreated for InMemory provider, MigrateAsync for relational
+            if (context.Database.IsInMemory())
+            {
+                await context.Database.EnsureCreatedAsync();
+            }
+            else
+            {
+                await context.Database.MigrateAsync();
+            }
 
             // Check if data already exists
             if (await context.Services.AnyAsync())

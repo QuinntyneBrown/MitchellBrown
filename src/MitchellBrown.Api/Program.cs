@@ -11,17 +11,18 @@ builder.AddServiceDefaults();
 
 // Skip infrastructure services registration if in test mode
 var isTestMode = builder.Configuration.GetValue<bool>("SkipDbInitialization");
+var useInMemoryDatabase = builder.Configuration.GetValue<bool>("UseInMemoryDatabase");
 if (!isTestMode)
 {
     var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-    if (string.IsNullOrWhiteSpace(connectionString))
+    if (string.IsNullOrWhiteSpace(connectionString) && !useInMemoryDatabase)
     {
         throw new InvalidOperationException(
             "Missing connection string 'ConnectionStrings:DefaultConnection'. " +
             "Set it in appsettings.json (e.g., SqlExpress) or provide it via environment-specific configuration.");
     }
-    
-    builder.Services.AddInfrastructureServices(connectionString);
+
+    builder.Services.AddInfrastructureServices(connectionString ?? "", useInMemoryDatabase);
 }
 
 builder.Services.AddApiServices();
