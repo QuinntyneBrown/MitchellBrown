@@ -6,6 +6,9 @@ using MitchellBrown.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add service defaults & Aspire service discovery.
+builder.AddServiceDefaults();
+
 // Skip infrastructure services registration if in test mode
 var isTestMode = builder.Configuration.GetValue<bool>("SkipDbInitialization");
 if (!isTestMode)
@@ -44,6 +47,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.UseCors("CorsPolicy");
+
+app.MapDefaultEndpoints();
 
 app.Run();
 

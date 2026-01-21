@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting" Version="9.5.2" />
+    <PackageReference Include="Aspire.Hosting.NodeJs" Version="9.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MitchellBrown.Api\MitchellBrown.Api.csproj" />
+    <ProjectReference Include="..\MitchellBrown.ServiceDefaults\MitchellBrown.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+</Project>
