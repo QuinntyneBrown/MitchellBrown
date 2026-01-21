@@ -3,7 +3,9 @@
 
 using Aspire.Hosting;
 
-var builder = DistributedApplication.CreateBuilder(args);
+// Note: Dashboard is disabled due to workload version mismatch with .NET 9 preview SDK
+// Re-enable by changing DisableDashboard to false once Aspire workload is updated
+var builder = DistributedApplication.CreateBuilder(new DistributedApplicationOptions { Args = args, DisableDashboard = true });
 
 // Add the API project
 var apiService = builder.AddProject("api", "../MitchellBrown.Api/MitchellBrown.Api.csproj")
@@ -11,7 +13,7 @@ var apiService = builder.AddProject("api", "../MitchellBrown.Api/MitchellBrown.A
 
 // Add the Angular web app as a Node.js application
 var webapp = builder.AddNpmApp("webapp", "../MitchellBrown.WebApp")
-    .WithHttpEndpoint(port: 4200, env: "PORT")
+    .WithHttpEndpoint(targetPort: 4200)
     .WithExternalHttpEndpoints()
     .PublishAsDockerFile();
 
