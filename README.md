@@ -19,7 +19,7 @@ The system implements a clean, three-tier backend architecture following Domain-
 
 ### Backend (.NET 10.0)
 
-The backend is organized into three distinct projects:
+The backend is organized into multiple projects following clean architecture principles:
 
 - **MitchellBrown.Core** - Contains domain models and business logic
   - Aggregate models organized by bounded context (e.g., Inquiry)
@@ -36,6 +36,19 @@ The backend is organized into three distinct projects:
   - RESTful API controllers
   - OpenAPI/Swagger documentation
   - CORS configuration for frontend integration
+  - Integrated with Aspire ServiceDefaults for observability
+
+- **MitchellBrown.ServiceDefaults** - Shared Aspire service configuration
+  - OpenTelemetry configuration for distributed tracing
+  - Health checks configuration
+  - Service discovery setup
+  - Resilience patterns (retry, circuit breaker, etc.)
+
+- **MitchellBrown.AppHost** - .NET Aspire orchestrator
+  - Orchestrates all application services
+  - Configures service-to-service communication
+  - Provides local development dashboard
+  - Enables deployment to Azure Container Apps
 
 ### Frontend (Angular 21)
 
@@ -53,6 +66,7 @@ The backend is organized into three distinct projects:
 - Entity Framework Core 10.0
 - Swagger/OpenAPI for API documentation
 - xUnit for testing
+- .NET Aspire 9.5 for orchestration and observability
 
 ### Frontend
 - Angular 21
@@ -65,6 +79,12 @@ The backend is organized into three distinct projects:
 ### Database
 - SQL Server Express (default configuration)
 
+### Cloud & DevOps
+- .NET Aspire for orchestration and deployment
+- Azure Container Apps (recommended deployment target)
+- Azure Application Insights for monitoring
+- OpenTelemetry for distributed tracing
+
 ## Project Structure
 
 ```
@@ -75,12 +95,14 @@ MitchellBrown/
 │       └── mitchellBrownSwa.bicep # SWA module (Microsoft.Web/staticSites)
 ├── src/
 │   ├── MitchellBrown.Api/          # Web API controllers and endpoints
+│   ├── MitchellBrown.AppHost/      # Aspire orchestrator (new)
 │   ├── MitchellBrown.Core/         # Domain models and business logic
 │   │   ├── Models/                # DDD aggregate roots
 │   │   │   └── Inquiry/           # Inquiry domain model
 │   │   └── Services/              # Core business services
 │   ├── MitchellBrown.Infrastructure/ # Data access and infrastructure
 │   │   └── Services/              # DbContext implementation
+│   ├── MitchellBrown.ServiceDefaults/ # Aspire service defaults (new)
 │   └── MitchellBrown.WebApp/       # Angular frontend application
 │       ├── src/
 │       │   ├── app/
@@ -107,6 +129,73 @@ MitchellBrown/
 - [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) or SQL Server
 - [Angular CLI](https://angular.io/cli) (optional, for Angular-specific commands)
 - [Azure CLI](https://learn.microsoft.com/cli/azure/) (optional, for deploying Bicep)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) (optional, for running with Aspire)
+
+## Running with .NET Aspire
+
+This project now includes .NET Aspire for orchestration and deployment to Azure. Aspire makes it easy to run the entire application stack locally and deploy to Azure Container Apps.
+
+### What is Aspire?
+
+.NET Aspire is an opinionated, cloud-ready stack for building observable, production-ready, distributed applications. It provides:
+- Service orchestration and discovery
+- Integrated telemetry (OpenTelemetry)
+- Health checks
+- Easy deployment to Azure Container Apps
+
+### Running the Application with Aspire
+
+1. Navigate to the AppHost directory:
+   ```bash
+   cd src/MitchellBrown.AppHost
+   ```
+
+2. Run the Aspire AppHost:
+   ```bash
+   dotnet run
+   ```
+
+3. Open the Aspire Dashboard in your browser (URL will be displayed in the console, typically `http://localhost:15248`)
+
+The AppHost will automatically:
+- Start the API project on a configured port
+- Start the Angular web app using `npm start`
+- Provide a unified dashboard for monitoring all services
+- Configure service discovery between components
+
+### Deploying to Azure with Aspire
+
+To deploy the application to Azure Container Apps:
+
+1. Install the Azure Developer CLI:
+   ```bash
+   # Windows (winget)
+   winget install microsoft.azd
+   
+   # macOS (Homebrew)
+   brew tap azure/azd && brew install azd
+   
+   # Linux
+   curl -fsSL https://aka.ms/install-azd.sh | bash
+   ```
+
+2. Login to Azure:
+   ```bash
+   azd auth login
+   ```
+
+3. Deploy from the AppHost directory:
+   ```bash
+   cd src/MitchellBrown.AppHost
+   azd init
+   azd up
+   ```
+
+This will provision and deploy:
+- Azure Container Apps for the API
+- Azure Container Apps for the Angular frontend
+- Azure Application Insights for telemetry
+- All necessary supporting infrastructure
 
 ## Infrastructure (Azure Static Web Apps)
 
