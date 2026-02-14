@@ -134,7 +134,8 @@
               "lineHeight": 1.5,
               "textAlign": "center",
               "fontFamily": "Plus Jakarta Sans",
-              "fontSize": 15
+              "fontSize": 15,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -263,7 +264,8 @@
                       "content": "A thorough assessment of your complete financial picture to identify gaps and opportunities for growth.",
                       "lineHeight": 1.5,
                       "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -318,7 +320,8 @@
                       "content": "Protect your legacy and ensure your assets are distributed according to your wishes.",
                       "lineHeight": 1.5,
                       "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -373,7 +376,8 @@
                       "content": "Comprehensive insurance solutions tailored to protect you and your family's future.",
                       "lineHeight": 1.5,
                       "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -655,7 +659,8 @@
                           "fill": "#999999",
                           "content": "Your full name",
                           "fontFamily": "Plus Jakarta Sans",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -705,7 +710,8 @@
                           "fill": "#999999",
                           "content": "your@email.com",
                           "fontFamily": "Plus Jakarta Sans",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -755,7 +761,8 @@
                           "fill": "#999999",
                           "content": "Optional subject",
                           "fontFamily": "Plus Jakarta Sans",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -802,7 +809,8 @@
                           "fill": "#999999",
                           "content": "Tell us how we can help you...",
                           "fontFamily": "Plus Jakarta Sans",
-                          "fontSize": 14
+                          "fontSize": 14,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -947,7 +955,8 @@
               "content": "© 2026 Mitchell Brown Financial. All rights reserved.",
               "textAlign": "center",
               "fontFamily": "Plus Jakarta Sans",
-              "fontSize": 12
+              "fontSize": 12,
+              "fontWeight": "normal"
             }
           ]
         }
@@ -1096,7 +1105,8 @@
               "lineHeight": 1.5,
               "textAlign": "center",
               "fontFamily": "Plus Jakarta Sans",
-              "fontSize": 17
+              "fontSize": 17,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -1234,7 +1244,8 @@
                       "content": "A thorough assessment of your financial picture to identify gaps and opportunities.",
                       "lineHeight": 1.5,
                       "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -1289,7 +1300,8 @@
                       "content": "Protect your legacy and ensure your assets are distributed according to your wishes.",
                       "lineHeight": 1.5,
                       "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -1346,7 +1358,8 @@
                   "content": "Comprehensive insurance solutions tailored to protect you and your family's future.",
                   "lineHeight": 1.5,
                   "fontFamily": "Plus Jakarta Sans",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -1933,7 +1946,8 @@
               "content": "© 2026 Mitchell Brown Financial. All rights reserved.",
               "textAlign": "center",
               "fontFamily": "Plus Jakarta Sans",
-              "fontSize": 12
+              "fontSize": 12,
+              "fontWeight": "normal"
             }
           ]
         }
@@ -2115,7 +2129,8 @@
               "lineHeight": 1.6,
               "textAlign": "center",
               "fontFamily": "Plus Jakarta Sans",
-              "fontSize": 19
+              "fontSize": 19,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -2243,7 +2258,8 @@
               "lineHeight": 1.5,
               "textAlign": "center",
               "fontFamily": "Plus Jakarta Sans",
-              "fontSize": 17
+              "fontSize": 17,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -2303,7 +2319,8 @@
                       "content": "A thorough assessment of your complete financial picture to identify gaps and opportunities for growth.",
                       "lineHeight": 1.6,
                       "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 15
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -2358,7 +2375,8 @@
                       "content": "Protect your legacy and ensure your assets are distributed according to your wishes.",
                       "lineHeight": 1.6,
                       "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 15
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -2413,7 +2431,8 @@
                       "content": "Comprehensive insurance solutions tailored to protect you and your family's future.",
                       "lineHeight": 1.6,
                       "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 15
+                      "fontSize": 15,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -2646,7 +2665,8 @@
               "content": "Fill out the form below and we'll get back to you within 24 hours.",
               "textAlign": "center",
               "fontFamily": "Plus Jakarta Sans",
-              "fontSize": 17
+              "fontSize": 17,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -2952,7 +2972,8 @@
                       "fill": "#FFFFFF88",
                       "content": "Building secure financial futures since day one.",
                       "fontFamily": "Plus Jakarta Sans",
-                      "fontSize": 14
+                      "fontSize": 14,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -3021,7 +3042,1299 @@
               "fill": "#FFFFFF66",
               "content": "© 2026 Mitchell Brown Financial. All rights reserved.",
               "fontFamily": "Plus Jakarta Sans",
-              "fontSize": 13
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "OCeqi",
+      "x": 0,
+      "y": 3468,
+      "name": "Instagram - 1080x1080",
+      "clip": true,
+      "width": 1080,
+      "height": 1080,
+      "fill": "$dark-blue",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "1zvWH",
+          "name": "Top Accent",
+          "width": "fill_container",
+          "height": 8,
+          "fill": "$primary-orange"
+        },
+        {
+          "type": "frame",
+          "id": "3Qen4",
+          "name": "Main Content",
+          "width": "fill_container",
+          "height": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            60,
+            64
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "yVvWy",
+              "name": "Shield Icon Frame",
+              "width": 64,
+              "height": 64,
+              "fill": "#FFFFFF15",
+              "cornerRadius": 32,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "CdcXP",
+                  "name": "shieldIcon",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "shield-check",
+                  "iconFontFamily": "lucide",
+                  "fill": "$primary-orange"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "xvcSi",
+              "name": "Brand Label",
+              "fill": "$primary-orange",
+              "content": "MITCHELL BROWN FINANCIAL",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 14,
+              "fontWeight": "600",
+              "letterSpacing": 4
+            },
+            {
+              "type": "rectangle",
+              "id": "VQBot",
+              "name": "Divider",
+              "fill": "$primary-orange",
+              "width": 60,
+              "height": 3
+            },
+            {
+              "type": "frame",
+              "id": "xU34c",
+              "name": "Headline Group",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZJ3Sm",
+                  "name": "Headline Intro",
+                  "fill": "#FFFFFFCC",
+                  "content": "Discover the Benefits of",
+                  "textAlign": "center",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 22,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "EbhIW",
+                  "name": "Headline Main",
+                  "fill": "$white",
+                  "textGrowth": "fixed-width",
+                  "width": 800,
+                  "content": "Universal Life\nInsurance",
+                  "lineHeight": 1.05,
+                  "textAlign": "center",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 64,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QmMYr",
+              "name": "Benefits Grid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vEENO",
+                  "name": "Benefit Row 1",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BwLRj",
+                      "name": "Benefit 1",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "J39PT",
+                          "name": "b1icon",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "circle-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "9fmku",
+                          "name": "b1text",
+                          "fill": "$white",
+                          "content": "Flexible Premiums",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bGotK",
+                      "name": "Benefit 2",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "2Du7F",
+                          "name": "b2icon",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "circle-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "riTfj",
+                          "name": "b2text",
+                          "fill": "$white",
+                          "content": "Cash Value Growth",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "1WunI",
+                  "name": "Benefit Row 2",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fp6TT",
+                      "name": "Benefit 3",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "iqymY",
+                          "name": "b3icon",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "circle-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "0nxSD",
+                          "name": "b3text",
+                          "fill": "$white",
+                          "content": "Lifetime Coverage",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zqUCe",
+                      "name": "Benefit 4",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "JVKbi",
+                          "name": "b4icon",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "circle-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "eA7I0",
+                          "name": "b4text",
+                          "fill": "$white",
+                          "content": "Tax Advantages",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 18,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "G9G2M",
+              "name": "CTA Section",
+              "layout": "vertical",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jSs2s",
+                  "name": "CTA Button",
+                  "fill": "$primary-orange",
+                  "cornerRadius": 8,
+                  "gap": 10,
+                  "padding": [
+                    18,
+                    48
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "BozsX",
+                      "name": "ctaIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "phone",
+                      "iconFontFamily": "lucide",
+                      "fill": "$dark-blue"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Hv2Fs",
+                      "name": "ctaText",
+                      "fill": "$dark-blue",
+                      "content": "Contact Us Today",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "L0GhR",
+                  "name": "contactInfo",
+                  "fill": "#FFFFFF99",
+                  "content": "info@mitchellbrownfinancial.com",
+                  "textAlign": "center",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YJ0de",
+          "name": "Bottom Accent",
+          "width": "fill_container",
+          "height": 8,
+          "fill": "$primary-orange"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "QTT8v",
+      "x": 1180,
+      "y": 3468,
+      "name": "Facebook - 1200x630",
+      "clip": true,
+      "width": 1200,
+      "height": 630,
+      "fill": "$dark-blue",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "zpdse",
+          "name": "Top Accent",
+          "width": "fill_container",
+          "height": 6,
+          "fill": "$primary-orange"
+        },
+        {
+          "type": "frame",
+          "id": "QHVYj",
+          "name": "Body",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "P2xN5",
+              "name": "Left Content",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "padding": [
+                48,
+                56
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "uNSoS",
+                  "name": "fbBrand",
+                  "fill": "$primary-orange",
+                  "content": "MITCHELL BROWN FINANCIAL",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "OvCTu",
+                  "name": "Headline",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NuQvX",
+                      "name": "fbIntro",
+                      "fill": "#FFFFFFBB",
+                      "content": "Discover the Benefits of",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16
+                    },
+                    {
+                      "type": "text",
+                      "id": "x9wPE",
+                      "name": "fbTitle",
+                      "fill": "$white",
+                      "textGrowth": "fixed-width",
+                      "width": 480,
+                      "content": "Universal Life\nInsurance",
+                      "lineHeight": 1.05,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 44,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qLvdy",
+                  "name": "Benefits",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "GkQWw",
+                      "name": "fb1",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "28Pjg",
+                          "name": "fb1i",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "circle-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kgX6C",
+                          "name": "fb1t",
+                          "fill": "#FFFFFFCC",
+                          "content": "Flexible premiums that adapt to your life",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dXXU8",
+                      "name": "fb2",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "32kcz",
+                          "name": "fb2i",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "circle-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "uTZ4q",
+                          "name": "fb2t",
+                          "fill": "#FFFFFFCC",
+                          "content": "Tax-deferred cash value growth",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "itLBV",
+                      "name": "fb3",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "gZhwb",
+                          "name": "fb3i",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "circle-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zbKue",
+                          "name": "fb3t",
+                          "fill": "#FFFFFFCC",
+                          "content": "Lifetime protection for your loved ones",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gNqPf",
+                  "name": "CTA Button",
+                  "fill": "$primary-orange",
+                  "cornerRadius": 8,
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    36
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "1YHsa",
+                      "name": "fbCtaIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "phone",
+                      "iconFontFamily": "lucide",
+                      "fill": "$dark-blue"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PL9hn",
+                      "name": "fbCtaText",
+                      "fill": "$dark-blue",
+                      "content": "Contact Us Today",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "A9s2D",
+              "name": "Right Image",
+              "metadata": {
+                "type": "unsplash",
+                "username": "ninthgrid_",
+                "link": "https://unsplash.com/@ninthgrid_",
+                "author": "Ninthgrid"
+              },
+              "width": 420,
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1739302750691-59c12d251139?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzQwMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QRGz8",
+                  "name": "Image Overlay",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 0,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#003D6BDD",
+                        "position": 0
+                      },
+                      {
+                        "color": "#003D6B00",
+                        "position": 0.6
+                      }
+                    ]
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "justifyContent": "end",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Qyo90",
+                      "name": "Shield Badge",
+                      "fill": "#FFFFFF20",
+                      "cornerRadius": 6,
+                      "gap": 8,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "hAC1H",
+                          "name": "fbShieldIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "shield-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Mt4Qv",
+                          "name": "fbShieldText",
+                          "fill": "$white",
+                          "content": "Protection You Can Trust",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ukcVw",
+          "name": "Bottom Accent",
+          "width": "fill_container",
+          "height": 6,
+          "fill": "$primary-orange"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "0k0l9",
+      "x": 0,
+      "y": 4648,
+      "name": "LinkedIn - 1200x627",
+      "clip": true,
+      "width": 1200,
+      "height": 627,
+      "fill": "$dark-blue",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "uk3I0",
+          "name": "Background Image",
+          "metadata": {
+            "type": "unsplash",
+            "username": "jdjan",
+            "link": "https://unsplash.com/@jdjan",
+            "author": "Jodel Djan"
+          },
+          "width": "fill_container",
+          "height": "fill_container",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1764022623671-29bf3b6486e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzQwNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "CvmnJ",
+              "x": 0,
+              "y": 0,
+              "name": "Dark Overlay",
+              "width": 1200,
+              "height": 627,
+              "fill": "#003D6BE8",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DQfu6",
+                  "name": "Top Bar",
+                  "width": "fill_container",
+                  "height": 5,
+                  "fill": "$primary-orange"
+                },
+                {
+                  "type": "frame",
+                  "id": "JCiZv",
+                  "name": "Content",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "gap": 48,
+                  "padding": [
+                    48,
+                    64
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "XZKak",
+                      "name": "Left Column",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "layout": "vertical",
+                      "gap": 24,
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bC1tb",
+                          "name": "liBrand",
+                          "fill": "$primary-orange",
+                          "content": "MITCHELL BROWN FINANCIAL",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "600",
+                          "letterSpacing": 3
+                        },
+                        {
+                          "type": "frame",
+                          "id": "WbFQb",
+                          "name": "Headline",
+                          "layout": "vertical",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "jOlwp",
+                              "name": "liSub",
+                              "fill": "#FFFFFFBB",
+                              "content": "Secure Your Family's Future with",
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 15
+                            },
+                            {
+                              "type": "text",
+                              "id": "N4OaN",
+                              "name": "liTitle",
+                              "fill": "$white",
+                              "textGrowth": "fixed-width",
+                              "width": 520,
+                              "content": "Universal Life\nInsurance",
+                              "lineHeight": 1.05,
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 48,
+                              "fontWeight": "800"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "A9QqE",
+                          "name": "liDesc",
+                          "fill": "#FFFFFFAA",
+                          "textGrowth": "fixed-width",
+                          "width": 480,
+                          "content": "Build lasting wealth while protecting your family. Universal Life offers the flexibility and growth potential you need.",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14
+                        },
+                        {
+                          "type": "frame",
+                          "id": "CTbvH",
+                          "name": "CTA Button",
+                          "fill": "$primary-orange",
+                          "cornerRadius": 8,
+                          "gap": 8,
+                          "padding": [
+                            14,
+                            36
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "am3V4",
+                              "name": "liCtaIcon",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "phone",
+                              "iconFontFamily": "lucide",
+                              "fill": "$dark-blue"
+                            },
+                            {
+                              "type": "text",
+                              "id": "zT92E",
+                              "name": "liCtaText",
+                              "fill": "$dark-blue",
+                              "content": "Get in Touch",
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 15,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pM5x0",
+                      "name": "Right Benefits",
+                      "width": 320,
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "4F1ae",
+                          "name": "Benefit Card 1",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF12",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#FFFFFF15"
+                          },
+                          "gap": 14,
+                          "padding": [
+                            16,
+                            20
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "QnTgu",
+                              "name": "Icon Bg",
+                              "width": 40,
+                              "height": 40,
+                              "fill": "#F5A84A20",
+                              "cornerRadius": 20,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "YCxN2",
+                                  "name": "card1IconInner",
+                                  "width": 20,
+                                  "height": 20,
+                                  "iconFontName": "trending-up",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "$primary-orange"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "J91b9",
+                              "name": "card1Text",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "oUsHn",
+                                  "name": "card1Title",
+                                  "fill": "$white",
+                                  "content": "Cash Value Growth",
+                                  "fontFamily": "Plus Jakarta Sans",
+                                  "fontSize": 14,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "twArh",
+                                  "name": "card1Desc",
+                                  "fill": "#FFFFFF88",
+                                  "content": "Your policy builds wealth over time",
+                                  "fontFamily": "Plus Jakarta Sans",
+                                  "fontSize": 12
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "0c5FI",
+                          "name": "Benefit Card 2",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF12",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#FFFFFF15"
+                          },
+                          "gap": 14,
+                          "padding": [
+                            16,
+                            20
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "kYBkY",
+                              "name": "Icon Bg",
+                              "width": 40,
+                              "height": 40,
+                              "fill": "#F5A84A20",
+                              "cornerRadius": 20,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "Q5OK3",
+                                  "name": "card2IconInner",
+                                  "width": 20,
+                                  "height": 20,
+                                  "iconFontName": "sliders-horizontal",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "$primary-orange"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "bo0RA",
+                              "name": "card2Text",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "bJJsV",
+                                  "name": "card2Title",
+                                  "fill": "$white",
+                                  "content": "Flexible Premiums",
+                                  "fontFamily": "Plus Jakarta Sans",
+                                  "fontSize": 14,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "uX7V2",
+                                  "name": "card2Desc",
+                                  "fill": "#FFFFFF88",
+                                  "content": "Adjust payments to fit your budget",
+                                  "fontFamily": "Plus Jakarta Sans",
+                                  "fontSize": 12
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ryG99",
+                          "name": "Benefit Card 3",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF12",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "#FFFFFF15"
+                          },
+                          "gap": 14,
+                          "padding": [
+                            16,
+                            20
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "PjkcH",
+                              "name": "Icon Bg",
+                              "width": 40,
+                              "height": 40,
+                              "fill": "#F5A84A20",
+                              "cornerRadius": 20,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "PD6bI",
+                                  "name": "card3IconInner",
+                                  "width": 20,
+                                  "height": 20,
+                                  "iconFontName": "shield",
+                                  "iconFontFamily": "lucide",
+                                  "fill": "$primary-orange"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "jIFtH",
+                              "name": "card3Text",
+                              "layout": "vertical",
+                              "gap": 2,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "e1t37",
+                                  "name": "card3Title",
+                                  "fill": "$white",
+                                  "content": "Lifetime Coverage",
+                                  "fontFamily": "Plus Jakarta Sans",
+                                  "fontSize": 14,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "IcCKq",
+                                  "name": "card3Desc",
+                                  "fill": "#FFFFFF88",
+                                  "content": "Protection that never expires",
+                                  "fontFamily": "Plus Jakarta Sans",
+                                  "fontSize": 12
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "P91Yr",
+      "x": 1300,
+      "y": 4648,
+      "name": "Twitter X - 1200x675",
+      "clip": true,
+      "width": 1200,
+      "height": 675,
+      "fill": "$dark-blue",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "4wXBD",
+          "name": "Left Accent",
+          "width": 6,
+          "height": "fill_container",
+          "fill": "$primary-orange"
+        },
+        {
+          "type": "frame",
+          "id": "j2pHl",
+          "name": "Main Area",
+          "width": "fill_container",
+          "height": "fill_container",
+          "children": [
+            {
+              "type": "frame",
+              "id": "o3WZ2",
+              "name": "Content",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                40,
+                56
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hj8mK",
+                  "name": "twBrand",
+                  "fill": "$primary-orange",
+                  "content": "MITCHELL BROWN FINANCIAL",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "rectangle",
+                  "id": "G0ZjY",
+                  "name": "Divider",
+                  "fill": "$primary-orange",
+                  "width": 48,
+                  "height": 3
+                },
+                {
+                  "type": "frame",
+                  "id": "v2GV4",
+                  "name": "Headline",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HwcNd",
+                      "name": "twQuestion",
+                      "fill": "#FFFFFFBB",
+                      "textGrowth": "fixed-width",
+                      "width": 500,
+                      "content": "Are You Getting the Most from Your Life Insurance?",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15
+                    },
+                    {
+                      "type": "text",
+                      "id": "Drlp9",
+                      "name": "twTitle",
+                      "fill": "$white",
+                      "textGrowth": "fixed-width",
+                      "width": 520,
+                      "content": "Universal Life Insurance",
+                      "lineHeight": 1.1,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 42,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "67tAm",
+                  "name": "twTagline",
+                  "fill": "$primary-orange",
+                  "textGrowth": "fixed-width",
+                  "width": 500,
+                  "content": "Flexible premiums  ·  Cash value growth  ·  Lifetime coverage  ·  Tax advantages",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "9owp5",
+                  "name": "CTA Row",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "VZtJQ",
+                      "name": "CTA Button",
+                      "fill": "$primary-orange",
+                      "cornerRadius": 8,
+                      "gap": 8,
+                      "padding": [
+                        14,
+                        32
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "60mcv",
+                          "name": "twCtaIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "phone",
+                          "iconFontFamily": "lucide",
+                          "fill": "$dark-blue"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hVKiW",
+                          "name": "twCtaText",
+                          "fill": "$dark-blue",
+                          "content": "Contact Us Today",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "zsHUB",
+                      "name": "twCtaSub",
+                      "fill": "#FFFFFF77",
+                      "content": "mitchellbrownfinancial.com",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "KiHzR",
+              "name": "Right Panel",
+              "metadata": {
+                "type": "unsplash",
+                "username": "checocanto",
+                "link": "https://unsplash.com/@checocanto",
+                "author": "Osmar do Canto"
+              },
+              "width": 380,
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1698853263034-67510897f1c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzQxMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "fe1eA",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Right Overlay",
+                  "width": 380,
+                  "height": 675,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 90,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#003D6BCC",
+                        "position": 0
+                      },
+                      {
+                        "color": "#003D6B00",
+                        "position": 0.3
+                      }
+                    ]
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "justifyContent": "end",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "G7p6E",
+                      "name": "Trust Badge",
+                      "fill": "#FFFFFF15",
+                      "cornerRadius": 6,
+                      "gap": 8,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "xwpvh",
+                          "name": "twBadgeIcon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "shield-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lPWKR",
+                          "name": "twBadgeText",
+                          "fill": "$white",
+                          "content": "Expert Financial Guidance",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
