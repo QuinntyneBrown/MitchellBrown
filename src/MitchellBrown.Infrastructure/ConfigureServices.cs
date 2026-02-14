@@ -11,12 +11,21 @@ namespace MitchellBrown.Infrastructure;
 
 public static class ConfigureServices
 {
-    public static void AddInfrastructureServices(this IServiceCollection services, string connectionString)
+    public static void AddInfrastructureServices(this IServiceCollection services, string connectionString, bool useInMemoryDatabase = false)
     {
         services.AddScoped<ITenantContext, TenantContext>();
 
         services.AddDbContext<MitchellBrownContext>(options =>
-            options.UseSqlServer(connectionString));
+        {
+            if (useInMemoryDatabase)
+            {
+                options.UseInMemoryDatabase("MitchellBrownDb");
+            }
+            else
+            {
+                options.UseSqlServer(connectionString);
+            }
+        });
 
         services.AddScoped<IMitchellBrownContext>(provider =>
             provider.GetRequiredService<MitchellBrownContext>());

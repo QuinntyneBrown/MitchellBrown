@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve mitchell-brown --host=127.0.0.1",
+    "start": "ng serve mitchell-brown --host=127.0.0.1 --port=4200",
     "build": "ng build mitchell-brown",
     "build:lib": "ng build mitchell-brown-components",
     "watch": "ng build mitchell-brown --watch --configuration development",
