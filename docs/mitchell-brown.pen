@@ -1,0 +1,3129 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "jo22O",
+      "x": 0,
+      "y": 0,
+      "name": "Mobile - 375px",
+      "clip": true,
+      "width": 375,
+      "fill": "$white",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "ctist",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "$white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-gray"
+          },
+          "padding": [
+            16,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "k8GYP",
+              "name": "Logo",
+              "fill": "$dark-blue",
+              "content": "Mitchell Brown",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "XT8n1",
+              "name": "Hamburger",
+              "width": 28,
+              "height": 20,
+              "layout": "vertical",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "aFCgd",
+                  "name": "line1",
+                  "fill": "$dark-blue",
+                  "width": 28,
+                  "height": 3
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "lr7yU",
+                  "name": "line2",
+                  "fill": "$dark-blue",
+                  "width": 20,
+                  "height": 3
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 2,
+                  "id": "r5A5j",
+                  "name": "line3",
+                  "fill": "$dark-blue",
+                  "width": 28,
+                  "height": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yjk8E",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "fill": "$primary-orange",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            60,
+            24
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "sVBQr",
+              "name": "Hero Tagline",
+              "fill": "#FFFFFF99",
+              "content": "FINANCIAL ADVISORY",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "J9kzY",
+              "name": "Hero Title",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Let your finances grow.",
+              "lineHeight": 1.1,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 36,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "5i25Y",
+              "name": "Hero Subtitle",
+              "fill": "#FFFFFFCC",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Expert guidance for life insurance, investments, retirement, and estate planning.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 15
+            },
+            {
+              "type": "frame",
+              "id": "qpvFk",
+              "name": "CTA Button",
+              "fill": "$white",
+              "cornerRadius": 8,
+              "gap": 8,
+              "padding": [
+                16,
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "LhqxR",
+                  "name": "ctaText",
+                  "fill": "$dark-blue",
+                  "content": "Request Free Info Session",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "HFRyr",
+          "name": "Services Section",
+          "width": "fill_container",
+          "fill": "$light-blue",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            48,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "4bt3V",
+              "name": "servicesLabel",
+              "fill": "$light-blue-accent",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "WHAT WE DO",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "3ZXvY",
+              "name": "servicesTitle",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Comprehensive Financial Services",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 26,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "7EtlF",
+              "name": "Cards Container",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Rdj6K",
+                  "name": "Card - Financial Needs",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "k1nKJ",
+                      "name": "Card Image",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "vantaymedia",
+                        "link": "https://unsplash.com/@vantaymedia",
+                        "author": "Van Tay Media"
+                      },
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1565688527174-775059ac429c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzE5NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "T7mMR",
+                      "name": "card1Title",
+                      "fill": "$white",
+                      "content": "Financial Needs Analysis",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xoTEs",
+                      "name": "card1Desc",
+                      "fill": "#FFFFFFAA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A thorough assessment of your complete financial picture to identify gaps and opportunities for growth.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "azhPd",
+                  "name": "Card - Estate Planning",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "leH23",
+                      "name": "Card Image",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "tylergm",
+                        "link": "https://unsplash.com/@tylergm",
+                        "author": "Tyler"
+                      },
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1712194540521-ce7d8f22fc84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzE5NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "Il2dd",
+                      "name": "card2Title",
+                      "fill": "$white",
+                      "content": "Estate Planning",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jbTmj",
+                      "name": "card2Desc",
+                      "fill": "#FFFFFFAA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Protect your legacy and ensure your assets are distributed according to your wishes.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "m3BHG",
+                  "name": "Card - Insurance",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "unwQG",
+                      "name": "Card Image",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "honeypoppet",
+                        "link": "https://unsplash.com/@honeypoppet",
+                        "author": "Sandie Clarke"
+                      },
+                      "width": "fill_container",
+                      "height": 160,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1585251172245-4e87f155fc30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzE5NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "3vUXs",
+                      "name": "card3Title",
+                      "fill": "$white",
+                      "content": "Insurance Needs",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lBKvW",
+                      "name": "card3Desc",
+                      "fill": "#FFFFFFAA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Comprehensive insurance solutions tailored to protect you and your family's future.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MMI36",
+          "name": "Contact Section",
+          "width": "fill_container",
+          "fill": "$dark-blue",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            48,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "6RZN4",
+              "name": "contactLabel",
+              "fill": "$light-blue-accent",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "GET IN TOUCH",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "nm2qF",
+              "name": "contactTitle",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "We're Here to Help",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 26,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "XXCnk",
+              "name": "Contact Info",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "0HZLe",
+                  "name": "locRow",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "XSnjh",
+                      "name": "locIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "map-pin",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary-orange"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VL7eU",
+                      "name": "locText",
+                      "fill": "$white",
+                      "content": "Mississauga, ON",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AJU4V",
+                  "name": "emailRow",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "LLCbg",
+                      "name": "emailIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "mail",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary-orange"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zBHPJ",
+                      "name": "emailText",
+                      "fill": "$white",
+                      "content": "mitchellbrownfinance@gmail.com",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hnoO1",
+              "name": "Quote",
+              "width": "fill_container",
+              "fill": "#FFFFFF08",
+              "cornerRadius": 8,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#FFFFFF15"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": [
+                24,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "i3xKG",
+                  "name": "quoteText",
+                  "fill": "#FFFFFFCC",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "&quot;Your need of finance is much greater than your need of protection.&quot;",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 15,
+                  "fontWeight": "500",
+                  "fontStyle": "italic"
+                },
+                {
+                  "type": "text",
+                  "id": "8KAOp",
+                  "name": "quoteAuthor",
+                  "fill": "$primary-orange",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "— R. Nelson Nash",
+                  "textAlign": "center",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HFAph",
+              "name": "Office Image",
+              "metadata": {
+                "type": "unsplash",
+                "username": "shotbykayven",
+                "link": "https://unsplash.com/@shotbykayven",
+                "author": "Kayvie"
+              },
+              "width": "fill_container",
+              "height": 200,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1761115176718-8b7a6191ece3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzE5Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 12
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nHYaA",
+          "name": "Inquiry Form Section",
+          "width": "fill_container",
+          "fill": "$light-blue",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            48,
+            24
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "tuTNu",
+              "name": "formLabel",
+              "fill": "$light-blue-accent",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "REQUEST FREE INFORMATION",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "OAaCt",
+              "name": "formTitle",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Let's Start a Conversation",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 26,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "iLZxP",
+              "name": "Form Fields",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZjIk2",
+                  "name": "Name Field",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2nVYt",
+                      "name": "nameLabel",
+                      "fill": "#FFFFFFCC",
+                      "content": "Name",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "FB4R6",
+                      "name": "nameInput",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "$white",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-gray"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wzZHq",
+                          "name": "namePlaceholder",
+                          "fill": "#999999",
+                          "content": "Your full name",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "3hIT8",
+                  "name": "Email Field",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yY41T",
+                      "name": "emailLabel",
+                      "fill": "#FFFFFFCC",
+                      "content": "Email",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ix33z",
+                      "name": "emailInput",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "$white",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-gray"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Mmgnl",
+                          "name": "emailPlaceholder",
+                          "fill": "#999999",
+                          "content": "your@email.com",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Vp5lD",
+                  "name": "Subject Field",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EGS1H",
+                      "name": "subjectLabel",
+                      "fill": "#FFFFFFCC",
+                      "content": "Subject",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "13b5s",
+                      "name": "subjectInput",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "$white",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-gray"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "m0X3H",
+                          "name": "subjectPlaceholder",
+                          "fill": "#999999",
+                          "content": "Optional subject",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "108Yy",
+                  "name": "Message Field",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eOGvp",
+                      "name": "msgLabel",
+                      "fill": "#FFFFFFCC",
+                      "content": "Message",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GCl89",
+                      "name": "msgInput",
+                      "width": "fill_container",
+                      "height": 120,
+                      "fill": "$white",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-gray"
+                      },
+                      "layout": "vertical",
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "r61Y8",
+                          "name": "msgPlaceholder",
+                          "fill": "#999999",
+                          "content": "Tell us how we can help you...",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "8VRWt",
+                  "name": "Submit Button",
+                  "width": "fill_container",
+                  "height": 52,
+                  "fill": "$white",
+                  "cornerRadius": 8,
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "XKqi9",
+                      "name": "submitIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "send",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary-blue"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zuWZx",
+                      "name": "submitText",
+                      "fill": "$primary-blue",
+                      "content": "Send Message",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wx2F2",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$dark-blue",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            32,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "4quAM",
+              "name": "footerLogo",
+              "fill": "$white",
+              "content": "Mitchell Brown Financial",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 16,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "nMPLP",
+              "name": "Footer Links",
+              "gap": 24,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "1P4A9",
+                  "name": "link1",
+                  "fill": "#FFFFFFAA",
+                  "content": "Life Insurance",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "YwtIp",
+                  "name": "link2",
+                  "fill": "#FFFFFFAA",
+                  "content": "Investments",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1CtjR",
+              "name": "Footer Links Row 2",
+              "gap": 24,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ijp0N",
+                  "name": "link3",
+                  "fill": "#FFFFFFAA",
+                  "content": "Retirement",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "EFNEO",
+                  "name": "link4",
+                  "fill": "#FFFFFFAA",
+                  "content": "Estate Planning",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "yyIvz",
+              "name": "divider",
+              "fill": "#FFFFFF15",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "Uj7Fo",
+              "name": "copyright",
+              "fill": "#FFFFFF66",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "© 2026 Mitchell Brown Financial. All rights reserved.",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "00MUI",
+      "x": 475,
+      "y": 0,
+      "name": "Tablet - 768px",
+      "clip": true,
+      "width": 768,
+      "fill": "$white",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "GzzyD",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "$white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-gray"
+          },
+          "padding": [
+            16,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Sdo8a",
+              "name": "tLogo",
+              "fill": "$dark-blue",
+              "content": "Mitchell Brown",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "etQ3p",
+              "name": "Nav Links",
+              "gap": 28,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gSXpw",
+                  "name": "tNav1",
+                  "fill": "$medium-gray",
+                  "content": "Life Insurance",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "cbKet",
+                  "name": "tNav2",
+                  "fill": "$medium-gray",
+                  "content": "Investments",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "VCqpb",
+                  "name": "tNav3",
+                  "fill": "$medium-gray",
+                  "content": "Retirement",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "qEP6Q",
+                  "name": "tNav4",
+                  "fill": "$medium-gray",
+                  "content": "Estate Planning",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "r0Qe1",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "fill": "$primary-orange",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            80,
+            48
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "fNZRx",
+              "name": "tHeroTag",
+              "fill": "#FFFFFF99",
+              "content": "FINANCIAL ADVISORY",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "600",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "Kt0CV",
+              "name": "tHeroTitle",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Let your finances grow.",
+              "lineHeight": 1.1,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 48,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "pQcZU",
+              "name": "tHeroSub",
+              "fill": "#FFFFFFCC",
+              "textGrowth": "fixed-width",
+              "width": 520,
+              "content": "Expert guidance for life insurance, investments, retirement, and estate planning. We help you build a secure financial future.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 17
+            },
+            {
+              "type": "frame",
+              "id": "eNOtL",
+              "name": "CTA Button",
+              "fill": "$white",
+              "cornerRadius": 8,
+              "gap": 10,
+              "padding": [
+                18,
+                40
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "tWdAc",
+                  "name": "tCtaIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "arrow-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "$dark-blue"
+                },
+                {
+                  "type": "text",
+                  "id": "KaTeP",
+                  "name": "tCtaText",
+                  "fill": "$dark-blue",
+                  "content": "Request Free Info Session",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 16,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "X0pKG",
+          "name": "Services Section",
+          "width": "fill_container",
+          "fill": "$light-blue",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            60,
+            32
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "NPfWu",
+              "name": "tServLabel",
+              "fill": "$light-blue-accent",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "WHAT WE DO",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "dlEIS",
+              "name": "tServTitle",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Comprehensive Financial Services",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "eMKC9",
+              "name": "Cards Row 1",
+              "width": "fill_container",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vPO8X",
+                  "name": "Card - Financial Needs",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "kCqkQ",
+                      "name": "tCard1Img",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "0xk",
+                        "link": "https://unsplash.com/@0xk",
+                        "author": "0xk"
+                      },
+                      "width": "fill_container",
+                      "height": 140,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1622988766425-8ecbae9cef6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzIwNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "5WlVE",
+                      "name": "tCard1Title",
+                      "fill": "$white",
+                      "content": "Financial Needs Analysis",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qeYF7",
+                      "name": "tCard1Desc",
+                      "fill": "#FFFFFFAA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A thorough assessment of your financial picture to identify gaps and opportunities.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "7gXEs",
+                  "name": "Card - Estate Planning",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": 12,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ivDnT",
+                      "name": "tCard2Img",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "jor9en",
+                        "link": "https://unsplash.com/@jor9en",
+                        "author": "Jorgen Hendriksen"
+                      },
+                      "width": "fill_container",
+                      "height": 140,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1585307128519-2dc914cff6d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzIwNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 8
+                    },
+                    {
+                      "type": "text",
+                      "id": "KAKmr",
+                      "name": "tCard2Title",
+                      "fill": "$white",
+                      "content": "Estate Planning",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GnBTg",
+                      "name": "tCard2Desc",
+                      "fill": "#FFFFFFAA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Protect your legacy and ensure your assets are distributed according to your wishes.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Xu8QO",
+              "name": "Card - Insurance",
+              "width": "fill_container",
+              "fill": "#FFFFFF15",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 14,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CEKR5",
+                  "name": "tCard3Img",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "hoianphotographer",
+                    "link": "https://unsplash.com/@hoianphotographer",
+                    "author": "Hoi An and Da Nang Photographer"
+                  },
+                  "width": "fill_container",
+                  "height": 140,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1767600466949-ce1d6b713bef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzIwNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 8
+                },
+                {
+                  "type": "text",
+                  "id": "MXcGE",
+                  "name": "tCard3Title",
+                  "fill": "$white",
+                  "content": "Insurance Needs",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 17,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "ZT9ry",
+                  "name": "tCard3Desc",
+                  "fill": "#FFFFFFAA",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Comprehensive insurance solutions tailored to protect you and your family's future.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xwL1h",
+          "name": "Contact Section",
+          "width": "fill_container",
+          "fill": "$dark-blue",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            60,
+            32
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "3P7dv",
+              "name": "tContactLabel",
+              "fill": "$light-blue-accent",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "GET IN TOUCH",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "NsDK4",
+              "name": "tContactTitle",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "We're Here to Help",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "ttYjZ",
+              "name": "Contact Row",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QMs1A",
+                  "name": "Contact Info",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "elQuF",
+                      "name": "tLocRow",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "d1dyX",
+                          "name": "tLocIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "map-pin",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RsgSp",
+                          "name": "tLocText",
+                          "fill": "$white",
+                          "content": "Mississauga, ON",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GryVO",
+                      "name": "tEmailRow",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "E0qxx",
+                          "name": "tEmailIcon",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "mail",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YHO8x",
+                          "name": "tEmailText",
+                          "fill": "$white",
+                          "content": "mitchellbrownfinance@gmail.com",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "4958U",
+                      "name": "Quote",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF08",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#FFFFFF15"
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": [
+                        20,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "7uuho",
+                          "name": "tQuoteText",
+                          "fill": "#FFFFFFCC",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "&quot;Your need of finance is much greater than your need of protection.&quot;",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "500",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kwO2U",
+                          "name": "tQuoteAuthor",
+                          "fill": "$primary-orange",
+                          "content": "— R. Nelson Nash",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "o8IUq",
+                  "name": "Office Image",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "snap_consultant",
+                    "link": "https://unsplash.com/@snap_consultant",
+                    "author": "Joseph George"
+                  },
+                  "width": "fill_container",
+                  "height": 280,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1698678256641-bb53b1b07a72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzIwNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "h3ZIg",
+          "name": "Inquiry Form Section",
+          "width": "fill_container",
+          "fill": "$light-blue",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            60,
+            32
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "UmocV",
+              "name": "tFormLabel",
+              "fill": "$light-blue-accent",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "REQUEST FREE INFORMATION",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "8DQWh",
+              "name": "tFormTitle",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Let's Start a Conversation",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 32,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "ycXDc",
+              "name": "Form Card",
+              "width": "fill_container",
+              "fill": "#FFFFFF10",
+              "cornerRadius": 12,
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "arOe8",
+                  "name": "Name Email Row",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fhkuM",
+                      "name": "Name Field",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "m7BRq",
+                          "name": "tNameLbl",
+                          "fill": "#FFFFFFCC",
+                          "content": "Name",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "hh5sO",
+                          "name": "tNameInp",
+                          "width": "fill_container",
+                          "height": 48,
+                          "fill": "$white",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border-gray"
+                          },
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "l9bcy",
+                              "name": "tNamePh",
+                              "fill": "#999999",
+                              "content": "Your full name",
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2T7P9",
+                      "name": "Email Field",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Hi0yw",
+                          "name": "tEmailLbl",
+                          "fill": "#FFFFFFCC",
+                          "content": "Email",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "O4Zh3",
+                          "name": "tEmailInp",
+                          "width": "fill_container",
+                          "height": 48,
+                          "fill": "$white",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border-gray"
+                          },
+                          "padding": [
+                            0,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "zAXUy",
+                              "name": "tEmailPh",
+                              "fill": "#999999",
+                              "content": "your@email.com",
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PV5RY",
+                  "name": "Subject Field",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ygMx3",
+                      "name": "tSubjectLbl",
+                      "fill": "#FFFFFFCC",
+                      "content": "Subject",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8Sdvs",
+                      "name": "tSubjectInp",
+                      "width": "fill_container",
+                      "height": 48,
+                      "fill": "$white",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-gray"
+                      },
+                      "padding": [
+                        0,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "AA753",
+                          "name": "tSubjectPh",
+                          "fill": "#999999",
+                          "content": "Optional subject",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "280jg",
+                  "name": "Message Field",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "layOs",
+                      "name": "tMsgLbl",
+                      "fill": "#FFFFFFCC",
+                      "content": "Message",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UxnDq",
+                      "name": "tMsgInp",
+                      "width": "fill_container",
+                      "height": 120,
+                      "fill": "$white",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-gray"
+                      },
+                      "layout": "vertical",
+                      "padding": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GqYQ7",
+                          "name": "tMsgPh",
+                          "fill": "#999999",
+                          "content": "Tell us how we can help you...",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "L4xgw",
+                  "name": "Submit Button",
+                  "width": "fill_container",
+                  "height": 52,
+                  "fill": "$white",
+                  "cornerRadius": 8,
+                  "gap": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "4PEwF",
+                      "name": "tSubmitIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "send",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary-blue"
+                    },
+                    {
+                      "type": "text",
+                      "id": "m2iyI",
+                      "name": "tSubmitText",
+                      "fill": "$primary-blue",
+                      "content": "Send Message",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mX3ch",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$dark-blue",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "qDbtq",
+              "name": "Footer Top",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SzJnj",
+                  "name": "tFooterLogo",
+                  "fill": "$white",
+                  "content": "Mitchell Brown Financial",
+                  "fontFamily": "Plus Jakarta Sans",
+                  "fontSize": 16,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "fcgcc",
+                  "name": "Footer Nav",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tagEv",
+                      "name": "tFLink1",
+                      "fill": "#FFFFFFAA",
+                      "content": "Life Insurance",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fz2BR",
+                      "name": "tFLink2",
+                      "fill": "#FFFFFFAA",
+                      "content": "Investments",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "3lqLY",
+                      "name": "tFLink3",
+                      "fill": "#FFFFFFAA",
+                      "content": "Retirement",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "gXIUD",
+                      "name": "tFLink4",
+                      "fill": "#FFFFFFAA",
+                      "content": "Estate Planning",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "R8lOq",
+              "name": "tDivider",
+              "fill": "#FFFFFF15",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "NysiX",
+              "name": "tCopyright",
+              "fill": "#FFFFFF66",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "© 2026 Mitchell Brown Financial. All rights reserved.",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "2OIcV",
+      "x": 1343,
+      "y": 0,
+      "name": "Desktop - 1440px",
+      "clip": true,
+      "width": 1440,
+      "fill": "$white",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "GpVrW",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": "$white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border-gray"
+          },
+          "padding": [
+            20,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "NmWfZ",
+              "name": "dLogo",
+              "fill": "$dark-blue",
+              "content": "Mitchell Brown Financial",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "x047E",
+              "name": "Nav + CTA",
+              "gap": 40,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Ry8tt",
+                  "name": "Nav Links",
+                  "gap": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Y943J",
+                      "name": "dN1",
+                      "fill": "$medium-gray",
+                      "content": "Life Insurance",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GAuKS",
+                      "name": "dN2",
+                      "fill": "$medium-gray",
+                      "content": "Investments",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yiCwv",
+                      "name": "dN3",
+                      "fill": "$medium-gray",
+                      "content": "Retirement Planning",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "4HIaf",
+                      "name": "dN4",
+                      "fill": "$medium-gray",
+                      "content": "Estate Planning",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Zl1de",
+                  "name": "Header CTA",
+                  "fill": "$primary-orange",
+                  "cornerRadius": 8,
+                  "padding": [
+                    10,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gODGj",
+                      "name": "dNavCtaText",
+                      "fill": "$white",
+                      "content": "Get Started",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FlXFv",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "fill": "$primary-orange",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            100,
+            120
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "R0xsX",
+              "name": "dHeroTag",
+              "fill": "#FFFFFF99",
+              "content": "FINANCIAL ADVISORY",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 13,
+              "fontWeight": "600",
+              "letterSpacing": 4
+            },
+            {
+              "type": "text",
+              "id": "wwn3J",
+              "name": "dHeroTitle",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Let your finances grow.",
+              "lineHeight": 1.05,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 64,
+              "fontWeight": "800"
+            },
+            {
+              "type": "text",
+              "id": "LtC2o",
+              "name": "dHeroSub",
+              "fill": "#FFFFFFCC",
+              "textGrowth": "fixed-width",
+              "width": 680,
+              "content": "Expert guidance for life insurance, investments, retirement, and estate planning. We help you build a secure financial future for you and your family.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 19
+            },
+            {
+              "type": "frame",
+              "id": "5YW3L",
+              "name": "CTA Row",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "dkNii",
+                  "name": "CTA Primary",
+                  "fill": "$white",
+                  "cornerRadius": 8,
+                  "gap": 10,
+                  "padding": [
+                    18,
+                    40
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2uFlg",
+                      "name": "dCtaText",
+                      "fill": "$dark-blue",
+                      "content": "Request Free Info Session",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "ZZeZV",
+                      "name": "dCtaIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "arrow-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "$dark-blue"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kvJli",
+                  "name": "CTA Secondary",
+                  "fill": "transparent",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 2,
+                    "fill": "$white"
+                  },
+                  "gap": 10,
+                  "padding": [
+                    18,
+                    40
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "e2XhM",
+                      "name": "dCtaSecText",
+                      "fill": "$white",
+                      "content": "Learn More",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "f7dwi",
+          "name": "Services Section",
+          "width": "fill_container",
+          "fill": "$light-blue",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "yV8Cn",
+              "name": "dServLabel",
+              "fill": "$light-blue-accent",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "WHAT WE DO",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "letterSpacing": 4
+            },
+            {
+              "type": "text",
+              "id": "L8h8u",
+              "name": "dServTitle",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Comprehensive Financial Services",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "JAWS1",
+              "name": "dServSub",
+              "fill": "#FFFFFFBB",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "We provide expert guidance across all areas of financial planning to help secure your future.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 17
+            },
+            {
+              "type": "frame",
+              "id": "21kgo",
+              "name": "Cards Row",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hiMEo",
+                  "name": "Card - Financial Needs",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "kQuZX",
+                      "name": "dCard1Img",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "markuswinkler",
+                        "link": "https://unsplash.com/@markuswinkler",
+                        "author": "Markus Winkler"
+                      },
+                      "width": "fill_container",
+                      "height": 180,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1654574111854-be9994f3c265?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzIxNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 10
+                    },
+                    {
+                      "type": "text",
+                      "id": "OyuVT",
+                      "name": "dCard1Title",
+                      "fill": "$white",
+                      "content": "Financial Needs Analysis",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ERpHp",
+                      "name": "dCard1Desc",
+                      "fill": "#FFFFFFAA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A thorough assessment of your complete financial picture to identify gaps and opportunities for growth.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gxGej",
+                  "name": "Card - Estate Planning",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NXrlH",
+                      "name": "dCard2Img",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "seljansalim",
+                        "link": "https://unsplash.com/@seljansalim",
+                        "author": "Seljan Salimova"
+                      },
+                      "width": "fill_container",
+                      "height": 180,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1756982784524-50c2bf75caf8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzIxNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 10
+                    },
+                    {
+                      "type": "text",
+                      "id": "nXXKR",
+                      "name": "dCard2Title",
+                      "fill": "$white",
+                      "content": "Estate Planning",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TGFU7",
+                      "name": "dCard2Desc",
+                      "fill": "#FFFFFFAA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Protect your legacy and ensure your assets are distributed according to your wishes.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tzKs4",
+                  "name": "Card - Insurance",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": 16,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Wpfv7",
+                      "name": "dCard3Img",
+                      "metadata": {
+                        "type": "unsplash",
+                        "username": "fotospk",
+                        "link": "https://unsplash.com/@fotospk",
+                        "author": "Fotos"
+                      },
+                      "width": "fill_container",
+                      "height": 180,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1659352786973-82ae3af461a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzIxNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 10
+                    },
+                    {
+                      "type": "text",
+                      "id": "ip8kE",
+                      "name": "dCard3Title",
+                      "fill": "$white",
+                      "content": "Insurance Needs",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "2Med0",
+                      "name": "dCard3Desc",
+                      "fill": "#FFFFFFAA",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Comprehensive insurance solutions tailored to protect you and your family's future.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 15
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DLj0T",
+          "name": "Contact Section",
+          "width": "fill_container",
+          "fill": "$dark-blue",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "v9RU6",
+              "name": "dContactLabel",
+              "fill": "$light-blue-accent",
+              "content": "GET IN TOUCH",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "letterSpacing": 4
+            },
+            {
+              "type": "text",
+              "id": "ecxW0",
+              "name": "dContactTitle",
+              "fill": "$white",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "We're Here to Help",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "Nh5nS",
+              "name": "Contact Row",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "9SDcy",
+                  "name": "Contact Info",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 28,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "d2iPJ",
+                      "name": "dLocRow",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "YZsBj",
+                          "name": "dLocIcon",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "map-pin",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "6dFXA",
+                          "name": "dLocText",
+                          "fill": "$white",
+                          "content": "Mississauga, ON",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 17,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BAtV9",
+                      "name": "dEmailRow",
+                      "gap": 14,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "H7mLf",
+                          "name": "dEmailIcon",
+                          "width": 22,
+                          "height": 22,
+                          "iconFontName": "mail",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-orange"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Kp2Z6",
+                          "name": "dEmailText",
+                          "fill": "$white",
+                          "content": "mitchellbrownfinance@gmail.com",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 17,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "n3oTv",
+                      "name": "Quote",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF08",
+                      "cornerRadius": 10,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "#FFFFFF15"
+                      },
+                      "layout": "vertical",
+                      "gap": 12,
+                      "padding": [
+                        24,
+                        20
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OyilV",
+                          "name": "dQuoteText",
+                          "fill": "#FFFFFFCC",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "&quot;Your need of finance is much greater than your need of protection.&quot;",
+                          "lineHeight": 1.6,
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 16,
+                          "fontWeight": "500",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hrU4F",
+                          "name": "dQuoteAuthor",
+                          "fill": "$primary-orange",
+                          "content": "— R. Nelson Nash",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "aoPDH",
+                  "name": "Office Image",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "yanahd",
+                    "link": "https://unsplash.com/@yanahd",
+                    "author": "Allen Y"
+                  },
+                  "width": "fill_container",
+                  "height": 340,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1762758731234-2569e31afa02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzEwMzIxNjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YD4NI",
+          "name": "Inquiry Form Section",
+          "width": "fill_container",
+          "fill": "$light-blue",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            80,
+            200
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "LILz4",
+              "name": "dFormLabel",
+              "fill": "$light-blue-accent",
+              "content": "REQUEST FREE INFORMATION",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "letterSpacing": 4
+            },
+            {
+              "type": "text",
+              "id": "0C3w3",
+              "name": "dFormTitle",
+              "fill": "$white",
+              "content": "Let's Start a Conversation",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 40,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "gP6RV",
+              "name": "dFormSub",
+              "fill": "#FFFFFFBB",
+              "content": "Fill out the form below and we'll get back to you within 24 hours.",
+              "textAlign": "center",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 17
+            },
+            {
+              "type": "frame",
+              "id": "yzDzc",
+              "name": "Form Card",
+              "width": "fill_container",
+              "fill": "#FFFFFF10",
+              "cornerRadius": 16,
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "6ZgfJ",
+                  "name": "Name Email Row",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "IIVTV",
+                      "name": "Name Field",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "c1BVi",
+                          "name": "dNameLbl",
+                          "fill": "#FFFFFFCC",
+                          "content": "Name",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "BARXw",
+                          "name": "dNameInp",
+                          "width": "fill_container",
+                          "height": 52,
+                          "fill": "$white",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border-gray"
+                          },
+                          "padding": [
+                            0,
+                            18
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "JWcK2",
+                              "name": "dNamePh",
+                              "fill": "#999999",
+                              "content": "Your full name",
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tpUHK",
+                      "name": "Email Field",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lqnmq",
+                          "name": "dEmailLbl",
+                          "fill": "#FFFFFFCC",
+                          "content": "Email",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Jz4UZ",
+                          "name": "dEmailInp",
+                          "width": "fill_container",
+                          "height": 52,
+                          "fill": "$white",
+                          "cornerRadius": 8,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border-gray"
+                          },
+                          "padding": [
+                            0,
+                            18
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "kFSz8",
+                              "name": "dEmailPh",
+                              "fill": "#999999",
+                              "content": "your@email.com",
+                              "fontFamily": "Plus Jakarta Sans",
+                              "fontSize": 15,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "z2s8N",
+                  "name": "Subject Field",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "KreOD",
+                      "name": "dSubjectLbl",
+                      "fill": "#FFFFFFCC",
+                      "content": "Subject",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RvWm1",
+                      "name": "dSubjectInp",
+                      "width": "fill_container",
+                      "height": 52,
+                      "fill": "$white",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-gray"
+                      },
+                      "padding": [
+                        0,
+                        18
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jtVMJ",
+                          "name": "dSubjectPh",
+                          "fill": "#999999",
+                          "content": "Optional subject",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "FpNlC",
+                  "name": "Message Field",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "e3PJZ",
+                      "name": "dMsgLbl",
+                      "fill": "#FFFFFFCC",
+                      "content": "Message",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nk6ja",
+                      "name": "dMsgInp",
+                      "width": "fill_container",
+                      "height": 140,
+                      "fill": "$white",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border-gray"
+                      },
+                      "layout": "vertical",
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "JJZKZ",
+                          "name": "dMsgPh",
+                          "fill": "#999999",
+                          "content": "Tell us how we can help you...",
+                          "fontFamily": "Plus Jakarta Sans",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mPFPp",
+                  "name": "Submit Button",
+                  "width": "fill_container",
+                  "height": 56,
+                  "fill": "$white",
+                  "cornerRadius": 8,
+                  "gap": 10,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "GXtgu",
+                      "name": "dSubmitIcon",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "send",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary-blue"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qMFtl",
+                      "name": "dSubmitText",
+                      "fill": "$primary-blue",
+                      "content": "Send Message",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 17,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "PqNU9",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$dark-blue",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            40,
+            80
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "KSzO3",
+              "name": "Footer Top",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BNLHd",
+                  "name": "Footer Brand",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BVpZi",
+                      "name": "dFooterLogo",
+                      "fill": "$white",
+                      "content": "Mitchell Brown Financial",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "oQVyK",
+                      "name": "dFooterTagline",
+                      "fill": "#FFFFFF88",
+                      "content": "Building secure financial futures since day one.",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VYtXH",
+                  "name": "Footer Nav",
+                  "gap": 36,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ALyyu",
+                      "name": "dFL1",
+                      "fill": "#FFFFFFAA",
+                      "content": "Life Insurance",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bYxxC",
+                      "name": "dFL2",
+                      "fill": "#FFFFFFAA",
+                      "content": "Investments",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "3Lg7z",
+                      "name": "dFL3",
+                      "fill": "#FFFFFFAA",
+                      "content": "Retirement Planning",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Bulex",
+                      "name": "dFL4",
+                      "fill": "#FFFFFFAA",
+                      "content": "Estate Planning",
+                      "fontFamily": "Plus Jakarta Sans",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "jDOwq",
+              "name": "dDivider",
+              "fill": "#FFFFFF15",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "iMskJ",
+              "name": "dCopyright",
+              "fill": "#FFFFFF66",
+              "content": "© 2026 Mitchell Brown Financial. All rights reserved.",
+              "fontFamily": "Plus Jakarta Sans",
+              "fontSize": 13
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "border-gray": {
+      "type": "color",
+      "value": "#E5E5E5"
+    },
+    "dark-blue": {
+      "type": "color",
+      "value": "#003D6B"
+    },
+    "dark-text": {
+      "type": "color",
+      "value": "#333333"
+    },
+    "font-family": {
+      "type": "string",
+      "value": "Plus Jakarta Sans"
+    },
+    "hero-bg": {
+      "type": "color",
+      "value": "#F5A84A"
+    },
+    "light-blue": {
+      "type": "color",
+      "value": "#1B5A9E"
+    },
+    "light-blue-accent": {
+      "type": "color",
+      "value": "#7BC8F6"
+    },
+    "light-gray": {
+      "type": "color",
+      "value": "#F5F5F5"
+    },
+    "medium-gray": {
+      "type": "color",
+      "value": "#555555"
+    },
+    "primary-blue": {
+      "type": "color",
+      "value": "#0B4F8A"
+    },
+    "primary-orange": {
+      "type": "color",
+      "value": "#F5A84A"
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 12
+    },
+    "radius-md": {
+      "type": "number",
+      "value": 8
+    },
+    "radius-sm": {
+      "type": "number",
+      "value": 4
+    },
+    "radius-xl": {
+      "type": "number",
+      "value": 16
+    },
+    "section-bg": {
+      "type": "color",
+      "value": "#1B5A9E"
+    },
+    "spacing-2xl": {
+      "type": "number",
+      "value": 60
+    },
+    "spacing-3xl": {
+      "type": "number",
+      "value": 80
+    },
+    "spacing-lg": {
+      "type": "number",
+      "value": 32
+    },
+    "spacing-md": {
+      "type": "number",
+      "value": 24
+    },
+    "spacing-sm": {
+      "type": "number",
+      "value": 16
+    },
+    "spacing-xl": {
+      "type": "number",
+      "value": 48
+    },
+    "spacing-xs": {
+      "type": "number",
+      "value": 8
+    },
+    "white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    }
+  }
+}
